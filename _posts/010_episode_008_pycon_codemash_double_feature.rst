@@ -106,7 +106,4 @@ Thanks for listening, and thanks so much for being patient with our
 intermittent release schedule.  Once Chris shows us his elaborate Powerpoint,
 we’ll get it figured out.
 
-Podcast: `MP3
-<http://media.blubrry.com/fpip/p/www.frompythonimportpodcast.com/shows/FPIP008.mp3>`_
-or `OGG
-<http://media.blubrry.com/fpip/p/www.frompythonimportpodcast.com/shows/FPIP008.ogg>`_
+Podcast: `MP3 </shows/FPIP008.mp3>`_ or `OGG </shows/FPIP008.ogg>`_

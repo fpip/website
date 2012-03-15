@@ -24,7 +24,4 @@ In this episode of From Python Import Podcast:
 Thanks for joining us. We welcome, nay, crave your thoughts. And your immortal
 souls.
 
-Podcast: `MP3
-<http://media.blubrry.com/fpip/p/frompythonimportpodcast.com/shows/FPIP004.mp3>`_
-or `OGG
-<http://media.blubrry.com/fpip/p/frompythonimportpodcast.com/shows/FPIP004.ogg>`_
+Podcast: `MP3 </shows/FPIP004.mp3>`_ or `OGG </shows/FPIP004.ogg>`_

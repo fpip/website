@@ -10,7 +10,4 @@ yet, we love them.
 
 Detailed show notes to follow, once Chris gets off his ass and writes them.
 
-Podcast: `MP3
-<http://media.blubrry.com/fpip/p/frompythonimportpodcast.com/shows/FPIP005.mp3>`_
-or `OGG
-<http://media.blubrry.com/fpip/p/frompythonimportpodcast.com/shows/FPIP005.ogg>`_
+Podcast: `MP3 </shows/FPIP005.mp3>`_ or `OGG </shows/FPIP005.ogg>`_

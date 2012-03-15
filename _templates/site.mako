@@ -12,7 +12,7 @@
     </head>
     <body>
         <div id="menu">
-            <div><a href="http://frompythonimportpodcast.com/feed">Subscribe &nbsp;<img src="/static/siteflow/rss.png" alt="RSS"></a></div>
+            <div><a href="/feed">Subscribe &nbsp;<img src="/static/siteflow/rss.png" alt="RSS"></a></div>
         </div><!-- menu -->
 
         <div id="header">

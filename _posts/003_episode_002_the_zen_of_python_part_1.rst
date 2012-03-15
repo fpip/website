@@ -30,7 +30,4 @@ The Zen of Python.
 Real show notes to follow. With links and everything.
 
 
-Podcast: `MP3
-<http://media.blubrry.com/fpip/p/frompythonimportpodcast.com/shows/FPIP002.mp3>`_
-or `OGG
-<http://media.blubrry.com/fpip/p/frompythonimportpodcast.com/shows/FPIP002.ogg>`_
+Podcast: `MP3 </shows/FPIP002.mp3>`_ or `OGG </shows/FPIP002.ogg>`_

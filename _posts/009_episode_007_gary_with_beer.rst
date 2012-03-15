@@ -76,7 +76,4 @@ promise!
 
 **[shownotes by Mike Pirnat, for he is made of WIN]**
 
-Podcast: `MP3
-<http://media.blubrry.com/fpip/p/frompythonimportpodcast.com/shows/FPIP007.mp3>`_
-or `OGG
-<http://media.blubrry.com/fpip/p/frompythonimportpodcast.com/shows/FPIP007.ogg>`_
+Podcast: `MP3 </shows/FPIP007.mp3>`_ or `OGG </shows/FPIP007.ogg>`_
