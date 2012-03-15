@@ -2,7 +2,7 @@
 categories: Shows
 author: Chris Miller
 date: 2010/05/01 00:00:00
-title: Epsiode 002: The Zen of Python, part 1
+title: Epsiode 002 - The Zen of Python, part 1
 ---
 This is the first of two episodes where we’re going to explore PEP 20, that is,
 The Zen of Python.
@@ -30,6 +30,7 @@ The Zen of Python.
 Real show notes to follow. With links and everything.
 
 
-Podcast: `Download <http://media.blubrry.com/fpip/p/frompythonimportpodcast.com/shows/FPIP002.mp3>`_
-
-Podcast (oggcast): `Download <http://media.blubrry.com/fpip/p/frompythonimportpodcast.com/shows/FPIP002.ogg>`_
+Podcast: `MP3
+<http://media.blubrry.com/fpip/p/frompythonimportpodcast.com/shows/FPIP002.mp3>`_
+or `OGG
+<http://media.blubrry.com/fpip/p/frompythonimportpodcast.com/shows/FPIP002.ogg>`_

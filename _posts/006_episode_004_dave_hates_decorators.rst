@@ -2,7 +2,7 @@
 categories: Shows
 author: Chris Miller
 date: 2010/06/15 00:00:00
-title: Episode 004: Dave Hates Decorators / Where Code Goes to Die
+title: Episode 004 - Dave Hates Decorators / Where Code Goes to Die
 ---
 In this episode of From Python Import Podcast:
 
@@ -24,6 +24,7 @@ In this episode of From Python Import Podcast:
 Thanks for joining us. We welcome, nay, crave your thoughts. And your immortal
 souls.
 
-Podcast: `Download <http://media.blubrry.com/fpip/p/frompythonimportpodcast.com/shows/FPIP004.mp3>`_
-
-Podcast (oggcast): `Download <http://media.blubrry.com/fpip/p/frompythonimportpodcast.com/shows/FPIP004.ogg>`_
+Podcast: `MP3
+<http://media.blubrry.com/fpip/p/frompythonimportpodcast.com/shows/FPIP004.mp3>`_
+or `OGG
+<http://media.blubrry.com/fpip/p/frompythonimportpodcast.com/shows/FPIP004.ogg>`_
