@@ -95,11 +95,11 @@ class Post(object):
         self.filters = None
         self.__parse()
         self.__post_process()
-        
+
     def __repr__(self): #pragma: no cover
         return u"<Post title='{0}' date='{1}'>".format(
             self.title, self.date.strftime("%Y/%m/%d %H:%M:%S"))
-     
+
     def __parse(self):
         """Parse the yaml and fill fields"""
         yaml_sep = re.compile("^---$", re.MULTILINE)
@@ -130,7 +130,7 @@ class Post(object):
             except KeyError:
                 self.filters = []
         self.content = bf.filter.run_chain(self.filters, post_src)
-        
+
     def __parse_post_excerpting(self):
         if bf.config.controllers.blog.post_excerpts.enabled:
             length = bf.config.controllers.blog.post_excerpts.word_length
@@ -158,13 +158,13 @@ class Post(object):
              text = ''.join(s.findAll(text=True))\
                                  .replace("\n", "").split(" ")
              return " ".join(text[:num_words]) + '...'
-        
+
     def __post_process(self):
         # fill in empty default value
         if not self.title:
             self.title = u"Untitled - {0}".format(
                     datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
-        
+
         if not self.slug:
             self.slug = re.sub("[ ?]", "-", self.title).lower()
 
@@ -200,7 +200,7 @@ class Post(object):
                     self.title.encode('utf-8')).hexdigest(), self.permalink)
 
         logger.debug(u"Permalink: {0}".format(self.permalink))
-     
+
     def __parse_yaml(self, yaml_src):
         y = yaml.load(yaml_src)
         # Load all the fields that require special processing first:
@@ -258,7 +258,7 @@ class Post(object):
         for field, value in y.items():
             if field not in fields_need_processing:
                 setattr(self,field,value)
-        
+
     def permapath(self):
         """Get just the path portion of a permalink"""
         return urlparse.urlparse(self.permalink)[2]
@@ -300,7 +300,7 @@ class Category(object):
 
     def __repr__(self):
         return self.name
-    
+
     def __cmp__(self, other):
         return cmp(self.name, other.name)
 
