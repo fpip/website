@@ -51,18 +51,14 @@
                         </div>
                     </div>
 
-                    <div class="widget">
-                        <h3 class="widget-header"><a href="http://identi.ca/group/fpip">Our Ident.ca Group</a></h3>
-                        <ul>
-                            <li>content</li>
-                        </ul>
-                    </div>
-
+##                    <div class="widget">
+##                        <h3 class="widget-header"><a href="http://identi.ca/group/fpip">Our Ident.ca Group</a></h3>
+##                        <div id="identica-widget"></div>
+##                    </div>
+##
                     <div class="widget">
                         <h3 class="widget-header"><a href="http://search.twitter.com/search?q=%23python">Python in the Twitterverse</a></h3>
-                        <ul>
-                            <li>content</li>
-                        </ul>
+                        <div id="twitter-widget"></div>
                     </div>
             </div><!-- #sidebar-widget-area -->
         </div><!-- #sidebar -->
@@ -89,5 +85,25 @@
             var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
           })();
         </script>
+        <script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+        <script type="text/javascript">
+        new TWTR.Widget({
+          id: 'twitter-widget',
+          version: 2,
+          type: 'search',
+          search: '#python',
+          interval: 30000,
+          features: {
+            scrollbar: false,
+            loop: true,
+            live: true,
+            behavior: 'default'
+          }
+        }).render().start();
+        </script>
+        <style type="text/css">
+        .twtr-hd, .twtr-ft { display: none; }
+        #twitter-widget div.twtr-doc { background-color: #FFF !important; }
+        </style>
     </body>
 </html>
