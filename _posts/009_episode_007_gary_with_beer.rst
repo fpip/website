@@ -1,7 +1,7 @@
 ---
 categories: Shows
 author: Chris Miller
-date: 2011/12/12 00:00:00
+date: 2011/01/12 00:00:00
 title: Episode 007 - Gary, With Beer
 ---
 **...or “Make Your Own Episode Title, Since You’re So Clever; I’m Tired and
