@@ -93,6 +93,8 @@ class Post(object):
         self.slug = None
         self.draft = False
         self.filters = None
+        self.mp3_file = None
+        self.duration = None
         self.__parse()
         self.__post_process()
 
@@ -241,6 +243,14 @@ class Post(object):
             self.tags = set([x.strip() for x in y['tags'].split(",")])
         except:
             pass
+        try:
+            self.mp3_file = y["mp3_file"]
+            self.mp3_size = os.stat(self.mp3_file).st_size
+        except KeyError:
+            pass
+        except OSError:
+            self.mp3_file = None
+            self.mp3_size = None
         try:
             self.filters = y['filter'] #filter is a synonym for filters
         except KeyError:
