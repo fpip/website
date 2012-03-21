@@ -2,6 +2,8 @@
 categories: Shows
 author: Chris Miller
 date: 2011/01/12 00:00:00
+mp3_file: shows/FPIP007.mp3
+duration: "57:30"
 title: Episode 007 - Gary, With Beer
 ---
 **...or “Make Your Own Episode Title, Since You’re So Clever; I’m Tired and

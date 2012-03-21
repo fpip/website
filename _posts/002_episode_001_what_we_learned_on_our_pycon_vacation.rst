@@ -2,6 +2,8 @@
 categories: Shows
 author: Chris Miller
 date: 2010/04/01 00:00:00
+mp3_file: shows/FPIP001.mp3
+duration: "40:13"
 title: Episode 001 - What We Learned on Our PyCon Vacation
 ---
 Welcome to the first episode of the podcast! These, my friends, are the Show
