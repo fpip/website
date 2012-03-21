@@ -7,8 +7,8 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>from python import podcast</title>
         <link rel="stylesheet" type="text/css" href="/static/siteflow/style.css">
-        <link rel="alternate" type="application/rss+xml" title="from python import podcast RSS Feed" href="http://frompythonimportpodcast.com/feed">
-        <link rel="alternate" type="application/atom+xml" title="from python import podcast Atom Feed" href="http://frompythonimportpodcast.com/feed/atom">
+        <link rel="alternate" type="application/rss+xml" title="from python import podcast RSS Feed" href="${bf.config.site.url}/feed">
+        <link rel="alternate" type="application/atom+xml" title="from python import podcast Atom Feed" href="${bf.config.site.url}/feed/atom">
     </head>
     <body>
         <div id="menu">
@@ -74,6 +74,7 @@
             </div><!-- #footer-container -->
         </div><!-- #footer -->
 
+        <script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
         <script type="text/javascript">
           var _gaq = _gaq || [];
           _gaq.push(['_setAccount', 'UA-15534287-1']);
@@ -84,26 +85,20 @@
             ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
             var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
           })();
+
+          new TWTR.Widget({
+            id: 'twitter-widget',
+            version: 2,
+            type: 'search',
+            search: '#python',
+            interval: 30000,
+            features: {
+              scrollbar: false,
+              loop: true,
+              live: true,
+              behavior: 'default'
+            }
+          }).render().start();
         </script>
-        <script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
-        <script type="text/javascript">
-        new TWTR.Widget({
-          id: 'twitter-widget',
-          version: 2,
-          type: 'search',
-          search: '#python',
-          interval: 30000,
-          features: {
-            scrollbar: false,
-            loop: true,
-            live: true,
-            behavior: 'default'
-          }
-        }).render().start();
-        </script>
-        <style type="text/css">
-        .twtr-hd, .twtr-ft { display: none; }
-        #twitter-widget div.twtr-doc { background-color: #FFF !important; }
-        </style>
     </body>
 </html>

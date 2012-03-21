@@ -1073,3 +1073,8 @@ text-align:left;
 div.footer-right {
 float:right;
 }
+
+/* Fix Ugly Twitter Widget -------------------- */
+
+.twtr-hd, .twtr-ft { display: none; }
+#twitter-widget div.twtr-doc { background-color: #FFF !important; }
