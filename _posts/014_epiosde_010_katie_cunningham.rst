@@ -1,0 +1,21 @@
+---
+categories: Shows
+author: Mike Crute
+date: 2012/05/06 00:00:00
+mp3_file: shows/FPIP010.mp3
+duration: "42:29"
+title: Episode 010 - Katie Cunningham
+---
+What can we say about Katie? We met her at PyCon 2012 and, frankly, we were
+smitten. She's a woman of many talents...
+
+* `She codes! <http://therealkatie.net/projects/>`_
+* `She does things to the Internet! <http://therealkatie.net/about/>`_
+* `She blogs! <http://therealkatie.net/blog/>`_
+* `She talks sometimes! <http://therealkatie.net/talks/>`_
+* `She likes to hear from people! <http://therealkatie.net/contact/>`_
+
+Most importantly, she's a pythonista and she agreed to talk with us. This is
+that talk. Enjoy!
+
+Podcast: `MP3 </shows/FPIP010.mp3>`_
