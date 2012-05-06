@@ -1078,3 +1078,18 @@ float:right;
 
 .twtr-hd, .twtr-ft { display: none; }
 #twitter-widget div.twtr-doc { background-color: #FFF !important; }
+
+
+/* About Page --------------------------------- */
+.about h3 {
+    clear: both;
+}
+.about img:first-of-type {
+    float: left !important;
+}
+.about img:nth-child(odd) {
+    float: left;
+}
+.about img:nth-child(even) {
+    float: right;
+}

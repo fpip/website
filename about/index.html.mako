@@ -1,6 +1,6 @@
 <%inherit file="_templates/site.mako" />
 
-<div id="single-body" class="post-body">
+<div id="single-body" class="post-body about">
     <h2 id="single-title" class="post-title page-title">About</h2>
     <p>
         From Python Import Podcast is a bimonthly podcast dedicated to sharing
@@ -14,6 +14,7 @@
     <h2>Your Friendly Neighborhood Hosts</h2>
 
     <h3>Chris Miller</h3>
+    <img src="http://www.gravatar.com/avatar/d312b176efd6acb7d581d6a14d53f270?s=150" />
     <p>
         Chris stumbled online in 1987 and has not looked back since.  He was the
         Co-Founder and Lead Architect of 
@@ -30,6 +31,7 @@
     </p>
 
     <h3>David Stanek</h3>
+    <img src="http://www.gravatar.com/avatar/00574728e2f964ce98a8f3adc826f8c8?s=150" />
     <p>
         David Stanek has been developing software professionally for over 12 years.
         Python has been his language of choice for over 8 years both on and off of
@@ -48,6 +50,7 @@
     </p>
 
     <h3>Mike Crute</h3>
+    <img src="http://www.gravatar.com/avatar/fd0a728650bbe4d12fe76fa79c2ed4d9?s=150" />
     <p>
         Mike grows two things: code and facial hair. Beyond that, there’s not much
         to say. He blogs at
@@ -55,12 +58,14 @@
     </p>
 
     <h3>Mike Pirnat</h3>
+    <img src="http://www.gravatar.com/avatar/e259a5ddded3575e51f3af255621a9ba?s=150" />
     <p>
         Mike Pirnat counterpoints the surrealism of the underlying metaphor. You
         can find him at <a href="http://pirnat.com/mike/">http://pirnat.com/mike/</a>.
     </p>
 
     <h3>Ben Smith</h3>
+    <img src="http://www.gravatar.com/avatar/d347c9e509c08ba386b054511a428a5c?s=150" />
     <p>
         Sysadmin by trade, Pythonista by passion. Dad to two boys and a girl.
         Guitarist.
@@ -70,4 +75,6 @@
         IM’s as benjaminws, benjaminwarfield, or reverendbws, or at
         <a href="http://just-another.net">http://just-another.net</a>.
     </p>
+
+    <br style="clear: both" />
 </div>
