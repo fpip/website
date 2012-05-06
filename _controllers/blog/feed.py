@@ -25,6 +25,12 @@ class Podcast(object):
     def owner_email(self):
         return self.email_re.match(self.config.author).groups()[1].strip()
 
+    @property
+    def itunes_summary(self):
+        summary = self.config.summary
+        summary = re.sub("<[^>]*>", "", summary).replace("\n", " ").strip()
+        return summary[:1000] + "..." if len(summary) > 1000 else summary
+
 
 
 def run():

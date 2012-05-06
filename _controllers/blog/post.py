@@ -273,6 +273,12 @@ class Post(object):
         """Get just the path portion of a permalink"""
         return urlparse.urlparse(self.permalink)[2]
 
+    @property
+    def itunes_summary(self):
+        summary = self.content
+        summary = re.sub("<[^>]*>", "", summary).replace("\n", " ").strip()
+        return summary[:1000] + "..." if len(summary) > 1000 else summary
+
     def __cmp__(self, other_post):
         "Posts should be comparable by date"
         return cmp(self.date, other_post.date)

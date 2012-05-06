@@ -14,11 +14,11 @@
     <pubDate>${datetime.utcnow().strftime("%a, %d %b %Y %H:%M:%S GMT")}</pubDate>
     <generator>Blogofile</generator>
     <language>en</language>
-##  <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="self" type="application/rss+xml" href="http://feeds.feedburner.com/FromPythonImportPodcast" />
+    <atom:link href="http://feeds.feedburner.com/FromPythonImportPodcast" rel="self" type="application/rss+xml" />
     <sy:updatePeriod>hourly</sy:updatePeriod>
     <sy:updateFrequency>1</sy:updateFrequency>
 % if podcast:
-    <itunes:summary>${podcast.summary}</itunes:summary>
+    <itunes:summary>${podcast.itunes_summary}</itunes:summary>
     <itunes:image href="${bf.config.site.url}${podcast.image}" />
     <itunes:subtitle>${podcast.subtitle}</itunes:subtitle>
     <itunes:keywords>${podcast.keywords}</itunes:keywords>
@@ -57,7 +57,7 @@
 % if post.mp3_file:
       <enclosure url="http://frompythonimportpodcast.com/${post.mp3_file}" length="${post.mp3_size}" type="audio/mpeg" />
       <itunes:subtitle>${post.excerpt}</itunes:subtitle>
-      <itunes:summary>${post.content}</itunes:summary>
+      <itunes:summary>${post.itunes_summary}</itunes:summary>
       <itunes:author>${podcast.owner_name}</itunes:author>
       <itunes:explicit>${podcast.explicit}</itunes:explicit>
       <itunes:duration>${post.duration}</itunes:duration>
