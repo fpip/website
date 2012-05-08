@@ -9,7 +9,7 @@ blog.description = "get your snake on"
 blog.timezone = "US/Eastern"
 
 blog.podcast.root = "/shows"
-blog.podcast.summary = "From Python Import Podcast is a bimonthly podcast"
+blog.podcast.summary = "From Python Import Podcast is a podcast about Python"
 blog.podcast.subtitle = "get your snake on"
 blog.podcast.explicit = False
 blog.podcast.image = "/static/content/fpip3d3-300x300.jpg"
