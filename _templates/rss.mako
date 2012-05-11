@@ -38,7 +38,7 @@
         <itunes:category text="Training" />
     </itunes:category>
 % endif
-% for post in posts[:10]:
+% for post in posts[:20]:
     <item>
       <title>${post.title}</title>
       <link>${post.permalink}</link>
