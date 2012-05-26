@@ -39,10 +39,10 @@
         <div class="container">
             <div class="row">
             <a href="/">Home</a> |
+            <a href="#">About</a> |
             <a href="#">Shows</a> |
             <a href="#">Blog</a> |
-            <a href="#">About</a> |
-            <a href="#">Propaganda</a> |
+            <a href="#">Goodies</a> |
             <a href="#">Contact</a>
 
         </div>
@@ -186,14 +186,14 @@
                     <h6>Navigate</h6>
                     <ul>
                         <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
                         <li><a href="#">Shows</a></li>
                         <li><a href="#">Blog</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Propaganda</a></li>
+                        <li><a href="#">Goodies</a></li>
                     </ul>
                 </div>
                 <div class="four columns">
-                    <h6>Contact Us</h6>
+                    <h6>Contact</h6>
                     <form class="nice" action="#" method="POST">
                         <input type="text" name="name" class="input-text" placeholder="Name">
                         <input type="email" name="email" class="input-text" placeholder="Email Address">
@@ -204,9 +204,14 @@
                 <div class="four columns">
                     <h6>Socialize</h6>
                     <ul>
-                        <li>Like on Facebook</li>
-                        <li>+1 on Google+</li>
-                        <li>Follow on Twitter</li>
+                        <li><a href="https://twitter.com/share"
+                            class="twitter-share-button" data-lang="en"
+                            data-url="http://frompythonimportpodcast.com"
+                            data-via="__fpip__"
+                            data-related="codeshaman,mpirnat,dstanek,mcrute,benjaminws">Tweet</a></li>
+                        <li><iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Ffrompythonimportpodcast.com&amp;send=false&amp;layout=button_count&amp;width=225&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font=arial&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:225px; height:21px;" allowTransparency="true"></iframe></li>
+                        <li><div class="g-plusone" data-size="medium" data-href="http://frompythonimportpodcast.com"></div></li>
+                        <li><a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Ffrompythonimportpodcast.com" class="pin-it-button" count-layout="horizontal"><img border="0" src="//assets.pinterest.com/images/PinExt.png" title="Pin It" /></a></li>
                     </ul>
                 </div>
             </div>
@@ -237,6 +242,7 @@
     <!-- TODO: Google analytics -->
     <!-- TODO: Twitter widget -->
 <script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+<script type="text/javascript" src="//assets.pinterest.com/js/pinit.js"></script>
 <script>
 new TWTR.Widget({
   id: 'twitter-widget',
@@ -266,7 +272,16 @@ new TWTR.Widget({
     behavior: 'default'
   }
 }).render().start();
-</script>
+
+!function(d,s,id){var
+    js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+
 </script>
 
 </body>
