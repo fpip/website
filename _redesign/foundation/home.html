@@ -85,7 +85,7 @@
                 <div class="seven columns">
                     <h4>Latest Episode</h4>
                     <article>
-                        <h5>Episode XYZ: Awesome Episode Title</h5>
+                        <h5><a href="#">Episode XYZ: Awesome Episode Title</a></h5>
                         <p>Nisi pariatur banksy locavore lo-fi. Tattooed
                         flexitarian sartorial stumptown ex vero. Echo park
                         pariatur duis synth, fixie street art sint vero
@@ -112,6 +112,58 @@
         </div>
     </div>
 
+    <!-- words -->
+    <div style="border: 1px dashed red">
+        <div class="container">
+            <div class="row">
+                <div class="twelve columns">
+                    <h3>Words</h3>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="seven columns">
+                    <h4>Latest News</h4>
+                    <article>
+                        <h5><a href="#">Blog Post Title</a></h5>
+                        <p>Williamsburg anim pickled, tattooed echo park raw
+                        denim excepteur ex pork belly chillwave minim photo
+                        booth assumenda mcsweeney's do. Fanny pack labore
+                        pour-over ennui gastropub ut. Pitchfork etsy proident
+                        nihil, food truck occaecat placeat sartorial gentrify
+                        trust fund ut magna reprehenderit aute. Do magna
+                        tattooed post-ironic, freegan pork belly organic forage
+                        +1 mustache mlkshk keytar pickled you probably haven't
+                        heard of them. Umami chillwave bushwick, high life
+                        consequat ennui commodo. Sartorial Austin aute
+                        sustainable keytar. Dolore ex sed locavore, est terry
+                        richardson gastropub hella retro cred mumblecore
+                        lo-fi.</p>
+
+                        <p>Portland consectetur photo booth, minim yr stumptown
+                        williamsburg reprehenderit. Carles nostrud 3 wolf moon,
+                        nulla cupidatat you probably haven't heard of them yr
+                        non. Jean shorts whatever food truck incididunt +1.
+                        Terry richardson mlkshk cray, american apparel sartorial
+                        you probably haven't heard of them pariatur. Wolf
+                        ullamco gastropub, semiotics +1 narwhal cray. Skateboard
+                        occupy stumptown letterpress trust fund squid, retro
+                        cupidatat narwhal PBR assumenda. Raw denim ethical
+                        veniam scenester minim skateboard.</p>
+
+                        <nav>
+                        <a href="#">More Posts</a>
+                        </nav>
+                    </article>
+                </div>
+                <div class="five columns">
+                    <h4>Twitter</h4>
+                    <p>What are people saying about Python?</p>
+                    <div id="twitter-widget"></div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- footer -->
     <footer style="border:1px dashed red">
@@ -131,5 +183,38 @@
 
     <!-- TODO: Google analytics -->
     <!-- TODO: Twitter widget -->
+<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+<script>
+new TWTR.Widget({
+  id: 'twitter-widget',
+  version: 2,
+  type: 'search',
+  search: 'python',
+  interval: 30000,
+  title: '',
+  subject: '',
+  width: 'auto',
+  height: 300,
+  theme: {
+    shell: {
+      background: '#8ec1da',
+      color: '#ffffff'
+    },
+    tweets: {
+      background: '#ffffff',
+      color: '#444444',
+      links: '#1985b5'
+    }
+  },
+  features: {
+    scrollbar: false,
+    loop: true,
+    live: true,
+    behavior: 'default'
+  }
+}).render().start();
+</script>
+</script>
+
 </body>
 </html>
