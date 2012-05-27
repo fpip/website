@@ -102,6 +102,7 @@
 /*	--------------------------------------------------
 	:: Tables
 	-------------------------------------------------- */
+/*  Default table styling upsets Google +1 button :-(
 	table { background: #fff; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; margin: 0 0 18px; border: 1px solid #ddd;  }
 	
 	table thead, table tfoot { background: #f5f5f5; }
@@ -119,6 +120,7 @@
 	table tbody tr.alt { background: #f9f9f9; }
 	table tbody tr:nth-child(even) { background: #f9f9f9; }
 	table tbody tr td { color: #333; padding: 9px 10px; vertical-align: top; border: none; }
+*/
 
 /* -------------------------------------------------- 
 	:: Misc
