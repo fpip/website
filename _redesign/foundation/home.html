@@ -35,7 +35,7 @@
 <body>
 
     <!-- header nav -->
-    <nav style="border: 1px dashed red">
+    <nav>
         <div class="container">
             <div class="row">
             <a href="/">Home</a> |
@@ -91,8 +91,8 @@
         </div>
     </header>
 
-    <!-- sounds -->
-    <div style="border: 1px dashed red">
+    <!-- listen -->
+    <div>
         <div class="container">
             <div class="row">
                 <div class="twelve columns">
@@ -112,25 +112,41 @@
                         exercitation et, tattooed occupy eu american apparel
                         flexitarian. Odio excepteur delectus eu, carles
                         consectetur direct trade...</p>
+                        <p><audio controls preload="metadata">
+                            <source src="http://frompythonimportpodcast.com/shows/FPIP010.mp3" />
+                            <!-- TODO: wire up OGG link -->
+                            <source src="#" />
+                        </audio></p>
                         <nav>
                             <a href="#">Show Notes</a> |
-                            <a href="#">Listen</a> |
                             <a href="#">Download MP3</a> |
-                            <a href="#">More Shows</a>
+                            <a href="#">Download OGG</a>
                         </nav>
                     </article>
+
+                    <h5>Older Episodes</h5>
+                    <ul>
+                        <li><a href="#">Episode XYZ - 1</a></li>
+                        <li><a href="#">Episode XYZ - 2</a></li>
+                        <li><a href="#">Episode XYZ - 3</a></li>
+                    </ul>
+                    <p><a href="#">More Episodes</a></p>
+
                 </div>
                 <div class="four columns offset-by-one">
                     <h4>Subscribe</h4>
-                    <p>Never miss an episode!</p>
-                    <a href="#" class="nice white large radius button">Subscribe in iTunes</a>
-                    <a href="#" class="nice white large radius button">Subscribe to MP3 Feed</a>
+                    <p>Make sure you never miss an episode!</p>
+                    <ul>
+                        <li><a href="#" class="nice white large radius button">Subscribe in iTunes</a></li>
+                        <li><a href="#" class="nice white large radius button">Subscribe to MP3s</a></li>
+                        <li><a href="#" class="nice white large radius button">Subscribe to OGGs</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- words -->
+    <!-- read  -->
     <div style="border: 1px dashed red">
         <div class="container">
             <div class="row">
@@ -168,12 +184,17 @@
                         occupy stumptown letterpress trust fund squid, retro
                         cupidatat narwhal PBR assumenda. Raw denim ethical
                         veniam scenester minim skateboard.</p>
-
-                        <nav>
-                        <a href="#">More Posts</a>
-                        </nav>
                     </article>
+
+                    <h5>Older Posts</h5>
+                    <ul>
+                        <li><a href="#">Post - 1</a></li>
+                        <li><a href="#">Post - 2</a></li>
+                        <li><a href="#">Post - 3</a></li>
+                    </ul>
+                    <p><a href="#">More Posts</a></p>
                 </div>
+
                 <div class="four columns offset-by-one">
                     <h4>Twitter</h4>
                     <p>What are people saying about Python?</p>
@@ -184,7 +205,7 @@
     </div>
 
     <!-- footer -->
-    <footer style="border:1px dashed red">
+    <footer>
         <div class="container">
             <div class="row">
                 <div class="four columns">
