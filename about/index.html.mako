@@ -47,7 +47,7 @@
     <p>
         When he’s not working he enjoys spending time with his beautiful wife and 3
         wonderful children. You can find his blog at
-        <a href="http://traceback.org">http://traceback.org</a>.c
+        <a href="http://traceback.org">http://traceback.org</a>.
     </p>
 
     <h3>Mike Crute</h3>
