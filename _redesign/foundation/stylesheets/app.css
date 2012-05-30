@@ -14,6 +14,18 @@
    Shared Styles
 ----------------------------------------- */
 
+h1 {
+    /* so far i like:
+     * - asap 56
+     * - oswald 64
+     * - cabin 56
+     * - abel 64
+     *
+     */
+    font-family: 'cabin',sans-serif;
+    font-size: 6em;
+    text-transform: lowercase;
+}
 
 
 /* -----------------------------------------
