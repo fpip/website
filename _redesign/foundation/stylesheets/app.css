@@ -14,6 +14,10 @@
    Shared Styles
 ----------------------------------------- */
 
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'cabin',sans-serif;
+}
+
 #masthead h1 {
     /* so far i like:
      * - asap 56
@@ -22,7 +26,6 @@
      * - abel 64
      *
      */
-    font-family: 'cabin',sans-serif;
     font-size: 6em;
     text-transform: lowercase;
     line-height: 90%;
@@ -43,6 +46,13 @@
         font-size: 2.5em;
     }
 }
+
+@media only screen and (max-width: 770px) {
+    #masthead h1 {
+        font-size: 4.5em;
+    }
+}
+
 @media only screen and (max-width: 480px) {
     #masthead h1 {
         font-size: 2.5em;
