@@ -78,5 +78,3 @@ Thanks for listening, and we’ll be back next month with another installment–
 promise!
 
 **[shownotes by Mike Pirnat, for he is made of WIN]**
-
-Podcast: `MP3 </shows/FPIP007.mp3>`_ or `OGG </shows/FPIP007.ogg>`_

@@ -12,5 +12,3 @@ this episode, we meet with Steve Holden, Chairman of the PSF and all around
 swell guy. We discuss the history of PyCon and Python itself, explore the
 evolution of a volunteer conference, get turndown service, and even a little
 chocolate.
-
-Podcast: `MP3 </shows/FPIP009.mp3>`_

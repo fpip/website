@@ -12,5 +12,3 @@ beach: not swimming, not making  sand castles, but talking about Python. And
 yet, we love them.
 
 Detailed show notes to follow, once Chris gets off his ass and writes them.
-
-Podcast: `MP3 </shows/FPIP005.mp3>`_ or `OGG </shows/FPIP005.ogg>`_

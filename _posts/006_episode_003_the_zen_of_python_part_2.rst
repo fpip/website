@@ -8,5 +8,3 @@ duration: "36:07"
 title: Epsiode 003 - The Zen of Python, part 2
 ---
 In this episode, we continue our discussion of the Zen of Python.
-
-Podcast: `MP3 </shows/FPIP003.mp3>`_ or `OGG </shows/FPIP003.ogg>`_

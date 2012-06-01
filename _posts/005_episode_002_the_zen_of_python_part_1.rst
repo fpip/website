@@ -31,6 +31,3 @@ The Zen of Python.
     Namespaces are one honking great idea -- let's do more of those!
 
 Real show notes to follow. With links and everything.
-
-
-Podcast: `MP3 </shows/FPIP002.mp3>`_ or `OGG </shows/FPIP002.ogg>`_

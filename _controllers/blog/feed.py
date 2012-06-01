@@ -34,13 +34,36 @@ class Podcast(object):
 
 
 def run():
-    write_feed(blog.posts, bf.util.path_join(blog.path, "feed"), "rss.mako")
-    write_feed(blog.posts, bf.util.path_join(blog.path, "feed", "atom"),
-                          "atom.mako")
+    extras = {}
 
-def write_feed(posts, root, template):
+    write_feed(blog.posts, bf.util.path_join(blog.path, "feed"), "rss.mako",
+            extra_env=extras)
+    write_feed(blog.posts, bf.util.path_join(blog.path, "feed", "atom"),
+            "atom.mako", extra_env=extras)
+
+    if blog.podcast:
+        mp3_posts = [post for post in blog.posts if post.mp3_file]
+        extras['enclosure_flavor'] = 'mp3'
+        write_feed(mp3_posts, bf.util.path_join(blog.path, "feed", "mp3"),
+                "rss.mako", extra_env=extras)
+
+        ogg_posts = [post for post in blog.posts if post.ogg_file]
+        extras['enclosure_flavor'] = 'ogg'
+        write_feed(ogg_posts, bf.util.path_join(blog.path, "feed", "ogg"),
+                "rss.mako", extra_env=extras)
+
+
+def write_feed(posts, root, template, extra_env=None):
+    extra_env = extra_env or {}
+
+    if blog.podcast:
+        extra_env['podcast'] = Podcast(blog.podcast)
+
     root = root.lstrip("/")
     path = bf.util.path_join(root, "index.xml")
     blog.logger.info("Writing RSS/Atom feed: " + path)
-    env = {"posts": posts, "root": root, "podcast": Podcast(blog.podcast)}
+
+    env = {"posts": posts, "root": root}
+    env.update(extra_env)
+
     bf.writer.materialize_template(template, path, env)

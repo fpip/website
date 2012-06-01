@@ -108,5 +108,3 @@ But wait–there’s more!  Behold the miscellaneous links of wonderment and joy
 Thanks for listening, and thanks so much for being patient with our
 intermittent release schedule.  Once Chris shows us his elaborate Powerpoint,
 we’ll get it figured out.
-
-Podcast: `MP3 </shows/FPIP008.mp3>`_ or `OGG </shows/FPIP008.ogg>`_

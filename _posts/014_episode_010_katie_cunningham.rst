@@ -18,5 +18,3 @@ smitten. She's a woman of many talents...
 
 Most importantly, she's a pythonista and she agreed to talk with us. This is
 that talk. Enjoy!
-
-Podcast: `MP3 </shows/FPIP010.mp3>`_

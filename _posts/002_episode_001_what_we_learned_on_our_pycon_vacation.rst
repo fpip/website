@@ -73,5 +73,3 @@ Notes.
  * The music is `Codemonkey
    <http://www.jonathancoulton.com/2006/04/14/thing-a-week-29-code-monkey/>`_,
    provided by `Jonathan Coulton <http://www.jonathancoulton.com/>`_.
-
-Podcast: `MP3 </shows/FPIP001.mp3>`_ or `OGG </shows/FPIP001.ogg>`_

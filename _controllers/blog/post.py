@@ -94,6 +94,7 @@ class Post(object):
         self.draft = False
         self.filters = None
         self.mp3_file = None
+        self.ogg_file = None
         self.duration = None
         self.__parse()
         self.__post_process()
@@ -251,6 +252,14 @@ class Post(object):
         except OSError:
             self.mp3_file = None
             self.mp3_size = None
+        try:
+            self.ogg_file = y["ogg_file"]
+            self.ogg_size = os.stat(self.ogg_file).st_size
+        except KeyError:
+            pass
+        except OSError:
+            self.ogg_file = None
+            self.ogg_size = None
         try:
             self.filters = y['filter'] #filter is a synonym for filters
         except KeyError:
