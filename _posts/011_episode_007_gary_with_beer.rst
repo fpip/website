@@ -3,6 +3,7 @@ categories: Shows
 author: Chris Miller
 date: 2011/01/12 00:00:00
 mp3_file: shows/FPIP007.mp3
+ogg_file: shows/FPIP007.ogg
 duration: "57:30"
 title: Episode 007 - Gary, With Beer
 ---
