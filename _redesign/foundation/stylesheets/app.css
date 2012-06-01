@@ -15,17 +15,10 @@
 ----------------------------------------- */
 
 h1,h2,h3,h4,h5,h6 {
-    font-family: 'cabin',sans-serif;
+    font-family: 'Cabin',"Helvetica Neue", "Helvetica", Arial, Verdana, sans-serif;
 }
 
 #masthead h1 {
-    /* so far i like:
-     * - asap 56
-     * - oswald 64
-     * - cabin 56
-     * - abel 64
-     *
-     */
     font-size: 6em;
     text-transform: lowercase;
     line-height: 90%;
