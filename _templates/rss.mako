@@ -60,16 +60,27 @@
       <guid isPermaLink="true">${post.permalink}</guid>
 % endif
       <description>${post.title}</description>
-      <content:encoded><![CDATA[${post.content}]]></content:encoded>
+    <content:encoded><![CDATA[${post.content}
+% if post.mp3_file or post.ogg_file:
+    <p>Podcast:
+    %if post.mp3_file:
+        <a href="${bf.config.site.url}/${post.mp3_file}">MP3</a>
+    %endif
+    %if post.ogg_file:
+        <a href="${bf.config.site.url}/${post.ogg_file}">OGG</a>
+    %endif
+    </p>
+%endif
+]]></content:encoded>
 % if (enclosure_flavor == 'mp3' or not enclosure_flavor) and post.mp3_file:
-      <enclosure url="http://frompythonimportpodcast.com/${post.mp3_file}" length="${post.mp3_size}" type="audio/mpeg" />
+    <enclosure url="${bf.config.site.url}/${post.mp3_file}" length="${post.mp3_size}" type="audio/mpeg" />
       <itunes:subtitle>${post.excerpt}</itunes:subtitle>
       <itunes:summary>${post.itunes_summary}</itunes:summary>
       <itunes:author>${podcast.owner_name}</itunes:author>
       <itunes:explicit>${podcast.explicit}</itunes:explicit>
       <itunes:duration>${post.duration}</itunes:duration>
 % elif enclosure_flavor == 'ogg' and post.ogg_file:
-      <enclosure url="http://frompythonimportpodcast.com/${post.ogg_file}" length="${post.ogg_size}" type="audio/ogg" />
+    <enclosure url="${bf.config.site.url}/${post.ogg_file}" length="${post.ogg_size}" type="audio/ogg" />
       <itunes:subtitle>${post.excerpt}</itunes:subtitle>
       <itunes:summary>${post.itunes_summary}</itunes:summary>
       <itunes:author>${podcast.owner_name}</itunes:author>
