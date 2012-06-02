@@ -18,5 +18,17 @@
         <p class="post-byline">By ${post.author} on ${post.date.strftime("%B %d, %Y")}</p>
     </div>
     <div class="top-post-body"></div>
-    <div class="post-body">${post.content}</div>
+    <div class="post-body">
+        ${post.content}
+% if post.mp3_file or post.ogg_file:
+    <p>Podcast:
+        % if post.mp3_file:
+            <a class="reference external" href="/${post.mp3_file}">MP3</a>
+        % endif
+        % if post.ogg_file:
+            <a class="reference external" href="/${post.ogg_file}">OGG</a>
+        % endif
+    </p>
+% endif
+    </div>
 </div>

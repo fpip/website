@@ -27,7 +27,7 @@
         In the past, he has also been a writer/publisher of role-playing games, a
         BBS sysop, a barista, a maker of golf clubs, a medievalist, an editor, and
         a Doctor Who fan. His blog can be found at
-        <a href="http://unquietdesperation.com">http://unquietdesperation.com</a>.
+        <a href="http://ctmiller.net">http://ctmiller.net</a>.
     </p>
 
     <h3>David Stanek</h3>
@@ -46,7 +46,8 @@
     </p>
     <p>
         When he’s not working he enjoys spending time with his beautiful wife and 3
-        wonderful children. You can find his blog at http://traceback.org.
+        wonderful children. You can find his blog at
+        <a href="http://traceback.org">http://traceback.org</a>.
     </p>
 
     <h3>Mike Crute</h3>

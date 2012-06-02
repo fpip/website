@@ -3,6 +3,7 @@ categories: Shows
 author: Mike Pirnat
 date: 2011/03/17 00:00:00
 mp3_file: shows/FPIP008.mp3
+ogg_file: shows/FPIP008.ogg
 duration: "1:46:30"
 title: Episode 008 - PyCon/CodeMash Double Feature (Doctor X will Code a Feature)
 ---
@@ -107,5 +108,3 @@ But wait–there’s more!  Behold the miscellaneous links of wonderment and joy
 Thanks for listening, and thanks so much for being patient with our
 intermittent release schedule.  Once Chris shows us his elaborate Powerpoint,
 we’ll get it figured out.
-
-Podcast: `MP3 </shows/FPIP008.mp3>`_ or `OGG </shows/FPIP008.ogg>`_

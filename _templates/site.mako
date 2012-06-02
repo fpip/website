@@ -44,7 +44,7 @@
                         <h3 class="widget-header">Subscribe</h3>
                         <div class="textwidget">
                             <ul>
-                                <li><a href="http://itunes.apple.com/podcast/from-python-import-podcast/id368205238" rel="alternate" type="application/rss+xml">Subscribe in iTunes</a></li>
+                                <li><a href="http://itunes.apple.com/us/podcast/from-python-import-podcast/id525611633" rel="alternate" type="application/rss+xml">Subscribe in iTunes</a></li>
                                 <li><a href="http://feeds.feedburner.com/FromPythonImportPodcastmp3" rel="alternate" type="application/rss+xml">Subscribe to the podcast (mp3)</a></li>
                                 <li><a href="http://feeds.feedburner.com/FromPythonImportPodcastogg" rel="alternate" type="application/rss+xml">Subscribe to the podcast (ogg)</a></li>
                             </ul>

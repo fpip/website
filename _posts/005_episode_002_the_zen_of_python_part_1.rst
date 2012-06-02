@@ -3,6 +3,7 @@ categories: Shows
 author: Chris Miller
 date: 2010/05/01 00:00:00
 mp3_file: shows/FPIP002.mp3
+ogg_file: shows/FPIP002.ogg
 duration: "1:00:00"
 title: Epsiode 002 - The Zen of Python, part 1
 ---
@@ -30,6 +31,3 @@ The Zen of Python.
     Namespaces are one honking great idea -- let's do more of those!
 
 Real show notes to follow. With links and everything.
-
-
-Podcast: `MP3 </shows/FPIP002.mp3>`_ or `OGG </shows/FPIP002.ogg>`_

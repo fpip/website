@@ -3,6 +3,7 @@ categories: Shows
 author: Chris Miller
 date: 2010/04/01 00:00:00
 mp3_file: shows/FPIP001.mp3
+ogg_file: shows/FPIP001.ogg
 duration: "40:13"
 title: Episode 001 - What We Learned on Our PyCon Vacation
 ---
@@ -72,5 +73,3 @@ Notes.
  * The music is `Codemonkey
    <http://www.jonathancoulton.com/2006/04/14/thing-a-week-29-code-monkey/>`_,
    provided by `Jonathan Coulton <http://www.jonathancoulton.com/>`_.
-
-Podcast: `MP3 </shows/FPIP001.mp3>`_ or `OGG </shows/FPIP001.ogg>`_
