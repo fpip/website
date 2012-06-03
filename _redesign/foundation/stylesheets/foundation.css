@@ -404,13 +404,14 @@
 		-webkit-border-radius: 1000px;
 		border-radius: 1000px;
 	}
-
+/*
 	.button.full-width {
 		width: 100%;
 		padding-left: 0 !important;
 		padding-right: 0 !important;
 		text-align: center;
 	}
+*/
 
 	.button.left-align {
 		text-align: left;
