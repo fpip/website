@@ -60,6 +60,28 @@ h1,h2,h3,h4,h5,h6 {
     }
 }
 
+#site-footer {
+    background-color: black;
+    color: white;
+    padding-top: 1em;
+}
+
+#site-footer h6 {
+    color: white;
+    border-bottom: 1px solid #333;
+    margin-bottom: 0.8em;
+}
+
+#site-footer input, #site-footer textarea {
+    background-color: #111;
+    color: white;
+    border-color: #333;
+}
+
+#copyright {
+    padding-top: 0.25em;
+}
+
 /* -----------------------------------------
    Page Name 1
 ----------------------------------------- */
