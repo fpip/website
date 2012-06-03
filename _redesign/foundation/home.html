@@ -37,17 +37,21 @@
 <body>
 
     <!-- header nav -->
-    <nav>
+    <nav id="site-header">
         <div class="container">
             <div class="row">
-            <a href="/">Home</a> |
-            <a href="#">About</a> |
-            <a href="#">Shows</a> |
-            <a href="#">Blog</a> |
-            <a href="#">Goodies</a> |
-            <a href="#">Contact</a>
+                <a href="/">Home</a> |
+                <a href="#">About</a> |
+                <a href="#">Shows</a> |
+                <a href="#">Blog</a> |
+                <a href="#">Goodies</a> |
+                <a href="#">Contact</a> |
+                <form action="http://www.google.com/search" method="get">
+                    <input type="search" name="q" placeholder="Search">
+                    <input type="hidden" name="sitesearch" value="http://frompythonimportpodcast.com">
+                </form>
 
-        </div>
+            </div>
         </div>
     </nav>
 
@@ -337,6 +341,9 @@ new TWTR.Widget({
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
 })();
 
+$(document).ready(function() {
+    if(!pageYOffset) window.scrollTo(1,0);
+});
 </script>
 
 </body>

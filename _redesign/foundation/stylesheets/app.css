@@ -18,6 +18,10 @@ h1,h2,h3,h4,h5,h6 {
     font-family: 'Cabin',"Helvetica Neue", "Helvetica", Arial, Verdana, sans-serif;
 }
 
+#masthead {
+    padding-top: 3.5em;
+}
+
 #masthead h1 {
     font-size: 6em;
     text-transform: lowercase;
@@ -40,12 +44,18 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 @media only screen and (max-width: 770px) {
+    #masthead {
+        padding-top: 2.5em;
+    }
     #masthead h1 {
         font-size: 4.5em;
     }
 }
 
 @media only screen and (max-width: 480px) {
+    #masthead {
+        padding-top: 3.75em;
+    }
     #masthead h1 {
         font-size: 2.5em;
     }
@@ -58,6 +68,20 @@ h1,h2,h3,h4,h5,h6 {
     .button.full-width {
         display: block;
     }
+}
+
+#site-header {
+    background-color: black;
+    padding: 0.25em;
+    margin-bottom: 1em;
+    
+    position: fixed;
+    z-index: 20000;
+    width: 100%;
+}
+
+#site-header form {
+    display: inline;
 }
 
 #site-footer {
