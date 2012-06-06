@@ -82,12 +82,17 @@ h1,h2,h3,h4,h5,h6 {
 
 #site-header form {
     display: inline;
+    margin: 0px;
+}
+#site-header input {
+    width: 50;
 }
 
 #site-footer {
     background-color: black;
     color: white;
-    padding-top: 1em;
+    padding-top: 2em;
+    padding-bottom: 1em;
 }
 
 #site-footer h6 {
@@ -103,7 +108,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 #copyright {
-    padding-top: 0.25em;
+    padding-top: 2em;
 }
 
 /* -----------------------------------------
