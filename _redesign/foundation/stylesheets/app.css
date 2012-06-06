@@ -101,7 +101,7 @@ h1,h2,h3,h4,h5,h6 {
     margin-bottom: 0.8em;
 }
 
-#site-footer input, #site-footer textarea {
+#site-footer input[type=text], #site-footer input[type=email], #site-footer textarea {
     background-color: #111;
     color: white;
     border-color: #333;
