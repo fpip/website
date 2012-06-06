@@ -102,24 +102,24 @@
 /*	--------------------------------------------------
 	:: Tables
 	-------------------------------------------------- */
-/*  Default table styling upsets Google +1 button :-(
-	table { background: #fff; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; margin: 0 0 18px; border: 1px solid #ddd;  }
-	
-	table thead, table tfoot { background: #f5f5f5; }
-	table thead tr th,
-	table tfoot tr th,
-	table tbody tr td,
-	table tr td,
-	table tfoot tr td { font-size: 12px; line-height: 18px; text-align: left; }
-	table thead tr th,
-	table tfoot tr td { padding: 8px 10px 9px; font-size: 14px; font-weight: bold; color: #222; }
-	table thead tr th:first-child, table tfoot tr td:first-child { border-left: none; }
-	table thead tr th:last-child, table tfoot tr td:last-child { border-right: none; }
+/*  Default table styling upsets Google +1 button :-( */
+	table.nice { background: #fff; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; margin: 0 0 18px; border: 1px solid #ddd;  }
 
-	table tbody tr.even,
-	table tbody tr.alt { background: #f9f9f9; }
-	table tbody tr:nth-child(even) { background: #f9f9f9; }
-	table tbody tr td { color: #333; padding: 9px 10px; vertical-align: top; border: none; }
+	table.nice thead, table.nice tfoot { background: #f5f5f5; }
+	table.nice thead tr th,
+	table.nice tfoot tr th,
+	table.nice tbody tr td,
+	table.nice tr td,
+	table.nice tfoot tr td { font-size: 12px; line-height: 18px; text-align: left; }
+	table.nice thead tr th,
+	table.nice tfoot tr td { padding: 8px 10px 9px; font-size: 14px; font-weight: bold; color: #222; }
+	table.nice thead tr th:first-child, table tfoot tr td:first-child { border-left: none; }
+	table.nice thead tr th:last-child, table tfoot tr td:last-child { border-right: none; }
+
+	table.nice tbody tr.even,
+	table.nice tbody tr.alt { background: #f9f9f9; }
+	table.nice tbody tr:nth-child(even) { background: #f9f9f9; }
+	table.nice tbody tr td { color: #333; padding: 9px 10px; vertical-align: top; border: none; }
 */
 
 /* -------------------------------------------------- 
