@@ -4,10 +4,22 @@
 /* --------------------------------------------------
    Table of Contents
 -----------------------------------------------------
+:: Notes: Colors
 :: Shared Styles
 :: Page Name 1
 :: Page Name 2
 */
+
+/* -----------------------------------------
+   Notes: Colors
+ 
+    * python blue #3773a5
+    * python yellow #ffe85b
+    * arrow green #00a651
+    * podcast purple #b471e1
+    * podcast lavender #ca99ea
+    * balloon cyan #89cfe3
+----------------------------------------- */
 
 
 /* -----------------------------------------
@@ -73,11 +85,12 @@ h1,h2,h3,h4,h5,h6 {
 #site-header {
     background-color: black;
     padding: 0.25em;
-    margin-bottom: 1em;
     
     position: fixed;
     z-index: 20000;
     width: 100%;
+
+    font-size: 12pt;
 }
 
 #site-header form {
@@ -99,6 +112,18 @@ h1,h2,h3,h4,h5,h6 {
     color: white;
     border-bottom: 1px solid #333;
     margin-bottom: 0.8em;
+}
+
+#site-header a, #site-footer a {
+    color: #ffe85b;
+//    color: #ccc;
+}
+#site-header a:hover, #site-footer a:hover {
+    color: #00a651;
+//    color: #ffe85b;
+}
+#site-header a:active, #site-footer a:active {
+    color: #3773a5;
 }
 
 #site-footer input[type=text], #site-footer input[type=email], #site-footer textarea {
