@@ -114,8 +114,9 @@ a:active {
 #site-footer {
     background-color: black;
     color: white;
-    padding-top: 2em;
-    padding-bottom: 1em;
+    margin-top: 2em;
+    padding-top: 2.5em;
+    padding-bottom: 1.5em;
 }
 
 #site-footer h6 {
