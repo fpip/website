@@ -67,7 +67,7 @@ a:active {
 
 @media only screen and (max-width: 767px) {
     #masthead {
-        padding-top: 2.5em;
+        padding-top: 2em;
     }
     #masthead h1 {
         font-size: 4.5em;
@@ -76,7 +76,7 @@ a:active {
 
 @media only screen and (max-width: 480px) {
     #masthead {
-        padding-top: 3.75em;
+        padding-top: 2em;
     }
     #masthead h1 {
         font-size: 2.5em;
@@ -93,9 +93,6 @@ a:active {
 }
 
 #site-header {
-    background-color: black;
-    padding: 0.25em;
-    
     position: fixed;
     z-index: 20000;
     width: 100%;
@@ -103,12 +100,32 @@ a:active {
     font-size: 12pt;
 }
 
+#nav-bar-slim {
+    background-color: black;
+}
+
+#nav-bar-fat {
+    background-color: black;
+    opacity: 0.8;
+    display: none;
+}
+
+#nav-bar-fat .nav-bar {
+    background-color: transparent;
+    border: none;
+}
+
+.nav-bar li {
+    border: none;
+    padding-right: 3.5em;
+}
+
 #site-header form {
     display: inline;
     margin: 0px;
 }
 #site-header input {
-    width: 50;
+    width: 100;
 }
 
 #site-footer {
@@ -135,6 +152,10 @@ a:active {
 }
 #site-header a:active, #site-footer a:active {
     color: #3773a5;
+}
+
+.nav-bar-toggle {
+    font-size: 8pt;
 }
 
 #site-footer input[type=text], #site-footer input[type=email], #site-footer textarea {

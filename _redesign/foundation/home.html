@@ -38,21 +38,37 @@
 
     <!-- header nav -->
     <nav id="site-header">
-        <div class="container">
+
+        <div id="nav-bar-slim" class="container" style="background-color:black;">
             <div class="row">
-                <a href="/">Home</a> |
-                <a href="#">About</a> |
-                <a href="#">Shows</a> |
-                <a href="#">Blog</a> |
-                <a href="#">Goodies</a> |
-                <a href="#">Contact</a> |
-                <a id="search-link" href="#">Search</a>
+                <div class="twelve columns">
+                    <a class="nav-bar-toggle" href="#" style="float:right;display:none;">&nabla;</a>
+                    <a class="nav-bar-toggle" href="#" style="float:right;">&Delta;</a>
+                </div>
             </div>
-            <div class="row" id="search-form" style="display:none">
+        </div>
+
+        <div id="nav-bar-fat" class="container">
+            <div class="row">
+                <div class="eight columns">
+                <ul class="nav-bar">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Shows</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Goodies</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="two columns offset-by-two">
+                <ul class="nav-bar">
+                    <li>
                 <form action="http://www.google.com/search" method="get">
                     <input type="search" name="q" placeholder="Search">
                     <input type="hidden" name="sitesearch" value="http://frompythonimportpodcast.com">
                 </form>
+                </li>
+            </div>
             </div>
         </div>
     </nav>
@@ -368,9 +384,10 @@ new TWTR.Widget({
 
 $(document).ready(function() {
     if(!pageYOffset) window.scrollTo(1,0);
-    $('#search-form').hide();
-    $('#search-link').click(function() {
-        $('#search-form').slideToggle(100);
+    $('#nav-bar-fat').hide();
+    $('a.nav-bar-toggle').click(function() {
+        $('#nav-bar-fat').slideToggle(100);
+        $('a.nav-bar-toggle').toggle();
         return false;
     });
 });
