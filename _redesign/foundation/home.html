@@ -233,7 +233,7 @@
 
                 <div class="four columns offset-by-one">
                     <h4>Twitter</h4>
-                    <p>What are people saying about Python?</p>
+                    <p>A little bird told me...</p>
                     <div id="twitter-widget"></div>
                 </div>
             </div>
@@ -352,8 +352,7 @@ $(function() {
 new TWTR.Widget({
   id: 'twitter-widget',
   version: 2,
-  type: 'search',
-  search: 'python',
+  type: 'profile',
   interval: 30000,
   title: '',
   subject: '',
@@ -374,9 +373,9 @@ new TWTR.Widget({
     scrollbar: false,
     loop: true,
     live: true,
-    behavior: 'default'
+    behavior: 'all'
   }
-}).render().start();
+}).render().setUser('__fpip__').start();
 
 !function(d,s,id){var
     js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
