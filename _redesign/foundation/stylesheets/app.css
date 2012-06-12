@@ -173,6 +173,10 @@ a:active {
     padding-top: 2em;
 }
 
+#twitter-widget h3 {
+visibility: hidden;
+}
+
 /* -----------------------------------------
    Page Name 1
 ----------------------------------------- */
