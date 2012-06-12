@@ -33,6 +33,10 @@ h1,h2,h3,h4,h5,h6 {
 section h3 {
     border-bottom: 1px solid #ccc;
     -webkit-border-image: -webkit-gradient(linear, left top, right top, from(white), to(#ccc));
+    font-family: 'Oswald',"Helvetica Neue", "Helvetica", Arial, Verdana, sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #555;
 }
 
 a {
