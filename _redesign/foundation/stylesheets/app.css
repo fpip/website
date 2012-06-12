@@ -30,7 +30,7 @@ h1,h2,h3,h4,h5,h6 {
     font-family: 'Cabin',"Helvetica Neue", "Helvetica", Arial, Verdana, sans-serif;
 }
 
-h3 {
+section h3 {
     border-bottom: 1px solid #ccc;
     -webkit-border-image: -webkit-gradient(linear, left top, right top, from(white), to(#ccc));
 }
@@ -136,7 +136,7 @@ a:active {
 #site-footer {
     background-color: black;
     color: white;
-    margin-top: 2em;
+    margin-top: 8em;
     padding-top: 2.5em;
     padding-bottom: 1.5em;
 }
@@ -181,6 +181,13 @@ article audio {
     width: 100%;
 }
 
+#listen {
+    margin-top: 3em;
+}
+
+#read {
+    margin-top: 3em;
+}
 /* -----------------------------------------
    Page Name 1
 ----------------------------------------- */
