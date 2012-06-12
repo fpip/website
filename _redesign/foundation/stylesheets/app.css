@@ -174,7 +174,11 @@ a:active {
 }
 
 #twitter-widget h3 {
-visibility: hidden;
+    visibility: hidden;
+}
+
+article audio {
+    width: 100%;
 }
 
 /* -----------------------------------------
