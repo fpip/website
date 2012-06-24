@@ -54,7 +54,7 @@ a:active {
 }
 
 #masthead {
-    padding-top: 3.5em;
+    padding-top: 2em;
 }
 
 #masthead h1 {
@@ -106,11 +106,9 @@ a:active {
 }
 
 #site-header {
-    position: fixed;
-    z-index: 20000;
     width: 100%;
-
     font-size: 12pt;
+    font-family: 'Cabin',"Helvetica Neue", "Helvetica", Arial, Verdana, sans-serif;
 }
 
 #nav-bar-slim {
@@ -119,8 +117,6 @@ a:active {
 
 #nav-bar-fat {
     background-color: black;
-    opacity: 0.8;
-    display: none;
 }
 
 #nav-bar-fat .nav-bar {
