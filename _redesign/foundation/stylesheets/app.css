@@ -34,6 +34,11 @@ h3,h4,h5,h6 {
     color: #333;
 }
 
+h5 {
+    border-bottom: 1px solid #ccc;
+    -webkit-border-image: -webkit-gradient(linear, left top, right top, from(white), to(#ccc));
+}
+
 section h3 {
     border-bottom: 1px solid #ccc;
     -webkit-border-image: -webkit-gradient(linear, left top, right top, from(white), to(#ccc));
