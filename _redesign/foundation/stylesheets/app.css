@@ -74,9 +74,15 @@ a:active {
     line-height: 90%;
 }
 
+@media only screen and (max-width: 1000px) {
+    #masthead h1 {
+        font-size: 5.5em;
+    }
+}
+
 @media only screen and (max-width: 980px) {
     #masthead h1 {
-        font-size: 5em;
+        font-size: 4.5em;
     }
     #masthead h2 {
         font-size: 2.5em;
@@ -158,6 +164,10 @@ a:active {
     }
 }
 @media only screen and (max-width: 767px) {
+    #nav-bar-fat {
+        padding-top:1em;
+        padding-bottom:1em;
+    }
     #site-header #search {
         float: left;
     }
