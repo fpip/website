@@ -38,40 +38,31 @@
 
     <!-- header nav -->
     <nav id="site-header">
-
-        <div id="nav-bar-slim" class="container" style="background-color:black;">
-            <div class="row">
-                <div class="twelve columns">
-                    <a class="nav-bar-toggle" href="#" style="float:right;display:none;">&nabla;</a>
-                    <a class="nav-bar-toggle" href="#" style="float:right;">&Delta;</a>
-                </div>
-            </div>
-        </div>
-
         <div id="nav-bar-fat" class="container">
             <div class="row">
                 <div class="eight columns">
-                <ul class="nav-bar">
-                    <li><a href="/">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Shows</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Goodies</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-            <div class="three columns offset-by-one">
-                <ul class="nav-bar">
-                    <li>
-                <form action="http://www.google.com/search" method="get">
-                    <input type="search" name="q" placeholder="Search">
-                    <input type="hidden" name="sitesearch" value="http://frompythonimportpodcast.com">
-                </form>
-                </li>
-            </div>
+                    <ul class="nav-bar">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Shows</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Goodies</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="three columns offset-by-one">
+                    <ul class="nav-bar">
+                        <li>
+                    <form action="http://www.google.com/search" method="get">
+                        <input type="search" name="q" placeholder="Search">
+                        <input type="hidden" name="sitesearch" value="http://frompythonimportpodcast.com">
+                    </form>
+                    </li>
+                </div>
             </div>
         </div>
     </nav>
+
 
 	<!-- masthead -->
     <header id="masthead">
@@ -104,6 +95,7 @@
                         <h1>From Python Import Podcast</h1>
                         <h2>an irregular podcast for irreverent pythonistas</h2>
                     </hgroup>
+                    <div class="panel">
                     <p>Easy-going, conversational, often silly, and occasionally
                     earning our iTunes "explicit" tag,
                     <strong>From Python Import Podcast is news, analysis,
@@ -111,10 +103,12 @@
                         language and community</strong>.
                     Put on your headphones and come hang out with us!</p>
                 </div>
+                </div>
             </div>
 
         </div>
     </header>
+
 
     <!-- listen -->
     <section id="listen">
@@ -128,7 +122,8 @@
                 <div class="seven columns">
                     <article>
                         <h4><a href="#">Episode XYZ: Awesome Episode Title</a></h4>
-                        <p>Published MM/DD/YYYY</p>
+                        <p>Published MM/DD/YYYY
+                            | <img src="./images/misc/explicit.png" alt="May contain explicit content"></p>
                         <p>Nisi pariatur banksy locavore lo-fi. Tattooed
                         flexitarian sartorial stumptown ex vero. Echo park
                         pariatur duis synth, fixie street art sint vero
@@ -153,7 +148,7 @@
 
                     <div class="row">
                         <div class="five columns">
-                            <h4>Previous Episodes</h4>
+                            <h5>Previous Episodes</h5>
                             <ul>
                                 <li><a href="#">Episode XYZ - 1</a></li>
                                 <li><a href="#">Episode XYZ - 2</a></li>
@@ -161,7 +156,7 @@
                             </ul>
                         </div>
                         <div class="five columns">
-                            <h4>Top Episodes</h4>
+                            <h5>Top Episodes</h5>
                             <ul>
                                 <li><a href="#">Episode ABC</a></li>
                                 <li><a href="#">Episode DEF</a></li>
@@ -236,7 +231,7 @@
 
                     <div class="row">
                         <div class="five columns">
-                            <h4>Previous Posts</h4>
+                            <h5>Previous Posts</h5>
                             <ul>
                                 <li><a href="#">Post - 1</a></li>
                                 <li><a href="#">Post - 2</a></li>
@@ -244,7 +239,7 @@
                             </ul>
                         </div>
                         <div class="five columns">
-                            <h4>Featured Posts</h4>
+                            <h5>Featured Posts</h5>
                             <ul>
                                 <li><a href="#">Post - X</a></li>
                                 <li><a href="#">Post - Y</a></li>
@@ -413,12 +408,13 @@ new TWTR.Widget({
 
 $(document).ready(function() {
     if(!pageYOffset) window.scrollTo(1,0);
-    $('#nav-bar-fat').hide();
+/*    $('#nav-bar-fat').hide();
     $('a.nav-bar-toggle').click(function() {
         $('#nav-bar-fat').slideToggle(100);
         $('a.nav-bar-toggle').toggle();
         return false;
     });
+*/
 });
 </script>
 

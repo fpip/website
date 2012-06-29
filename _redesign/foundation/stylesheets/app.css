@@ -30,6 +30,15 @@ h1,h2,h3,h4,h5,h6 {
     font-family: 'Cabin',"Helvetica Neue", "Helvetica", Arial, Verdana, sans-serif;
 }
 
+h3,h4,h5,h6 {
+    color: #333;
+}
+
+h5 {
+    border-bottom: 1px solid #ccc;
+    -webkit-border-image: -webkit-gradient(linear, left top, right top, from(white), to(#ccc));
+}
+
 section h3 {
     border-bottom: 1px solid #ccc;
     -webkit-border-image: -webkit-gradient(linear, left top, right top, from(white), to(#ccc));
@@ -50,7 +59,7 @@ a:active {
 }
 
 #masthead {
-    padding-top: 3.5em;
+    padding-top: 2em;
 }
 
 #masthead h1 {
@@ -102,11 +111,9 @@ a:active {
 }
 
 #site-header {
-    position: fixed;
-    z-index: 20000;
     width: 100%;
-
     font-size: 12pt;
+    font-family: 'Cabin',"Helvetica Neue", "Helvetica", Arial, Verdana, sans-serif;
 }
 
 #nav-bar-slim {
@@ -115,8 +122,6 @@ a:active {
 
 #nav-bar-fat {
     background-color: black;
-    opacity: 0.8;
-    display: none;
 }
 
 #nav-bar-fat .nav-bar {
