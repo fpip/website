@@ -38,6 +38,10 @@
 
     <!-- header nav -->
     <nav id="site-header">
+        <div id="nav-bar-slim" class="container">
+            <a class="nav-bar-toggle">Show Nav</a>
+            <a class="nav-bar-toggle" style="display:none">Hide Nav</a>
+        </div>
         <div id="nav-bar-fat" class="container">
             <div class="row">
                     <ul class="nav-bar">
@@ -405,13 +409,25 @@ new TWTR.Widget({
 
 $(document).ready(function() {
     if(!pageYOffset) window.scrollTo(1,0);
-/*    $('#nav-bar-fat').hide();
+
+    $(window).bind('resize', function() {
+        if($(document).width() >= 767) {
+            var nav_bar = $('#nav-bar-fat')[0]
+            var show_link = $('a.nav-bar-toggle')[0];
+            var hide_link = $('a.nav-bar-toggle')[1];
+            if(hide_link.style.display != "none") {
+                hide_link.style.display = "none";
+                show_link.style.display = "";
+            }
+            $('#nav-bar-fat').css({display: ""});
+        }
+    });
+
     $('a.nav-bar-toggle').click(function() {
         $('#nav-bar-fat').slideToggle(100);
         $('a.nav-bar-toggle').toggle();
         return false;
     });
-*/
 });
 </script>
 

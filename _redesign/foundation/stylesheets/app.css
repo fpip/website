@@ -124,11 +124,23 @@ a:active {
 }
 
 #nav-bar-slim {
+    display: none;
     background-color: black;
+    border-bottom: 1px solid #333;
 }
 
 #nav-bar-fat {
     background-color: black;
+    display: block;
+}
+
+@media only screen and (max-width:767px) {
+    #nav-bar-slim {
+        display: block;
+    }
+    #nav-bar-fat {
+        display: none;
+    }
 }
 
 #nav-bar-fat .nav-bar {
