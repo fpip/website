@@ -83,6 +83,7 @@ a:active {
     }
 }
 
+
 @media only screen and (max-width: 767px) {
     #masthead {
         padding-top: 2em;
@@ -149,9 +150,21 @@ a:active {
     margin: 0px;
 }
 #site-header input {
-    width: 212px;
+    width: 200px;
 }
-
+@media only screen and (max-width: 870px) {
+    #site-header input {
+        width: 110px;
+    }
+}
+@media only screen and (max-width: 767px) {
+    #site-header #search {
+        float: left;
+    }
+    #site-header input {
+        width: 220px;
+    }
+}
 #site-footer {
     background-color: black;
     color: white;
