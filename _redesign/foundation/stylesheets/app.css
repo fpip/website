@@ -234,8 +234,17 @@ a:active {
     visibility: hidden;
 }
 
+article {
+    margin-bottom:1em;
+}
+
 article audio {
     width: 100%;
+}
+
+article .social-links li {
+    display: inline-block;
+    vertical-align: top;
 }
 
 #listen {

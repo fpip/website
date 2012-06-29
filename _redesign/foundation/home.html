@@ -36,6 +36,15 @@
 </head>
 <body>
 
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
     <!-- header nav -->
     <nav id="site-header">
         <div id="nav-bar-slim" class="container">
@@ -144,6 +153,24 @@
                             <source type="audio/mpeg" src="http://frompythonimportpodcast.com/shows/FPIP010.mp3" />
                             <source type="audio/ogg" src="http://frompythonimportpodcast.com/shows/FPIP010.ogg" />
                         </audio></p>
+                        <ul class="social-links">
+                            <li><a href="https://twitter.com/share"
+                                class="twitter-share-button"
+                                data-url="http://example.com">Tweet</a></li>
+                            <li><div class="g-plusone" data-size="medium"
+                                data-href="http://example.com"></div></li>
+                            <li><div class="fb-like"
+                                data-href="http://example.com"
+                                data-send="false" data-layout="button_count"
+                                data-width="100" data-show-faces="false"
+                                style="vertical-align:top;"></div></li>
+                            <li><a
+                                href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fexample.com"
+                                class="pin-it-button"
+                                count-layout="horizontal"><img border="0"
+                                src="//assets.pinterest.com/images/PinExt.png"
+                                title="Pin It" /></a></li>
+                        </ul>
 
                     </article>
 
@@ -228,6 +255,26 @@
                         occupy stumptown letterpress trust fund squid, retro
                         cupidatat narwhal PBR assumenda. Raw denim ethical
                         veniam scenester minim skateboard.</p>
+
+                        <ul class="social-links">
+                            <li><a href="https://twitter.com/share"
+                                class="twitter-share-button"
+                                data-url="http://example.com">Tweet</a></li>
+                            <li><div class="g-plusone" data-size="medium"
+                                data-href="http://example.com"></div></li>
+                            <li><div class="fb-like"
+                                data-href="http://example.com"
+                                data-send="false" data-layout="button_count"
+                                data-width="100" data-show-faces="false"
+                                style="vertical-align:top;"></div></li>
+                            <li><a
+                                href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fexample.com"
+                                class="pin-it-button"
+                                count-layout="horizontal"><img border="0"
+                                src="//assets.pinterest.com/images/PinExt.png"
+                                title="Pin It" /></a></li>
+                        </ul>
+
                     </article>
 
                     <div class="row">
@@ -285,7 +332,11 @@
                             data-url="http://frompythonimportpodcast.com"
                             data-via="__fpip__"
                             data-related="codeshaman,mpirnat,dstanek,mcrute,benjaminws">Tweet</a></li>
-                        <li><iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Ffrompythonimportpodcast.com&amp;send=false&amp;layout=button_count&amp;width=225&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font=arial&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:225px; height:21px;" allowTransparency="true"></iframe></li>
+                        <li><div class="fb-like"
+                            data-href="http://frompythonimportpodcast.com"
+                            data-send="false" data-layout="button_count"
+                            data-width="225" data-show-faces="false"
+                            data-colorscheme="light"></div>
                         <li><div class="g-plusone" data-size="medium" data-href="http://frompythonimportpodcast.com"></div></li>
                         <li><a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Ffrompythonimportpodcast.com" class="pin-it-button" count-layout="horizontal"><img border="0" src="//assets.pinterest.com/images/PinExt.png" title="Pin It" /></a></li>
                     </ul>
