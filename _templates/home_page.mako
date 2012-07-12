@@ -148,22 +148,30 @@
                         % endif
                         </audio></p>
                         <ul class="social-links">
+                            % if bf.config.blog.twitter.enabled:
                             <li><a href="https://twitter.com/share"
                                 class="twitter-share-button"
                                 data-url="${latest_show.permalink}">Tweet</a></li>
+                            % endif
+                            % if bf.config.blog.googleplus.enabled:
                             <li><div class="g-plusone" data-size="medium"
                                 data-href="${latest_show.permalink}"></div></li>
+                            % endif
+                            % if bf.config.blog.facebook.enabled:
                             <li><div class="fb-like"
                                 data-href="${latest_show.permalink}"
                                 data-send="false" data-layout="button_count"
                                 data-width="100" data-show-faces="false"
                                 style="vertical-align:top;"></div></li>
+                            % endif
+                            % if bf.config.blog.pinterest.enabled:
                             <li><a
                                 href="http://pinterest.com/pin/create/button/?url=${latest_show.permalink|u}"
                                 class="pin-it-button"
                                 count-layout="horizontal"><img border="0"
                                 src="//assets.pinterest.com/images/PinExt.png"
                                 title="Pin It" /></a></li>
+                            % endif
                         </ul>
 
                     </article>
@@ -238,24 +246,31 @@
                         ${latest_post.content}
 
                         <ul class="social-links">
+                            % if bf.config.twitter.enabled:
                             <li><a href="https://twitter.com/share"
                                 class="twitter-share-button"
                                 data-url="${latest_post.permalink}">Tweet</a></li>
+                            % endif
+                            % if bf.config.googleplus.enabled:
                             <li><div class="g-plusone" data-size="medium"
                                 data-href="${latest_post.permalink}"></div></li>
+                            % endif
+                            % if bf.config.facebook.enabled:
                             <li><div class="fb-like"
                                 data-href="${latest_post.permalink}"
                                 data-send="false" data-layout="button_count"
                                 data-width="100" data-show-faces="false"
                                 style="vertical-align:top;"></div></li>
+                            % endif
+                            % if bf.config.pinterest.enabled:
                             <li><a
                                 href="http://pinterest.com/pin/create/button/?url=${latest_post.permalink|u}"
                                 class="pin-it-button"
                                 count-layout="horizontal"><img border="0"
                                 src="//assets.pinterest.com/images/PinExt.png"
                                 title="Pin It" /></a></li>
+                            % endif
                         </ul>
-
                     </article>
 
                     <div class="row">
@@ -309,19 +324,28 @@
                 <div class="two columns">
                     <h6>Socialize</h6>
                     <ul>
+                        % if bf.config.blog.twitter.enabled:
                         <li><a href="https://twitter.com/share"
                             class="twitter-share-button" data-lang="en"
                             data-url="${bf.config.site.url}"
-                            data-via="__fpip__"
-                            data-related="codeshaman,mpirnat,dstanek,mcrute,benjaminws">Tweet</a></li>
+                            data-via="${bf.config.blog.twitter.via}"
+                            data-related="${bf.config.blog.twitter.related}">Tweet</a></li>
+                        % endif
+                        % if bf.config.blog.facebook.enabled:
                         <li><div class="fb-like"
                             data-href="${bf.config.site.url}"
                             data-send="false" data-layout="button_count"
                             data-width="225" data-show-faces="false"
-                            data-colorscheme="light"></div>
-                        <li><div class="g-plusone" data-size="medium" data-href="http://frompythonimportpodcast.com"></div></li>
-                        <li><a
-                            href="http://pinterest.com/pin/create/button/?url=${bf.config.site.url|u}" class="pin-it-button" count-layout="horizontal"><img border="0" src="//assets.pinterest.com/images/PinExt.png" title="Pin It" /></a></li>
+                            data-colorscheme="light"></div></li>
+                        % endif
+                        % if bf.config.blog.googleplus.enabled:
+                        <li><div class="g-plusone"
+                            data-size="medium"
+                            data-href="${bf.config.site.url}"></div></li>
+                        % endif
+                        % if bf.config.blog.pinterest.enabled:
+                        <li><a href="http://pinterest.com/pin/create/button/?url=${bf.config.site.url|u}" class="pin-it-button" count-layout="horizontal"><img border="0" src="//assets.pinterest.com/images/PinExt.png" title="Pin It" /></a></li>
+                        % endif
                     </ul>
                 </div>
 
@@ -397,7 +421,9 @@
 
     <!-- TODO: Google analytics -->
 <script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+% if bf.config.blog.pinterest.enabled:
 <script type="text/javascript" src="//assets.pinterest.com/js/pinit.js"></script>
+% endif
 <script>
 
 // Input placeholders for IE
@@ -434,15 +460,19 @@ new TWTR.Widget({
   }
 }).render().setUser('__fpip__').start();
 
+% if bf.config.blog.twitter.enabled:
 !function(d,s,id){var
     js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+% endif
 
+% if bf.config.blog.googleplus.enabled:
 // Google +1
 (function() {
     var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
     po.src = 'https://apis.google.com/js/plusone.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
 })();
+% endif
 
 $(document).ready(function() {
     if(!pageYOffset) window.scrollTo(1,0);

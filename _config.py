@@ -20,3 +20,12 @@ blog.podcast.keywords = "programming, python, software, development"
 
 blog.homepage.recent_shows = 3
 blog.homepage.top_shows = 3
+
+# social sharing config
+blog.facebook.enabled = True
+blog.googleplus.enabled = True
+blog.pinterest.enabled = True
+blog.twitter.enabled = True
+blog.twitter.via = "__fpip__"
+blog.twitter.related = "codeshaman,mpirnat,dstanek,mcrute,benjaminws"
+
