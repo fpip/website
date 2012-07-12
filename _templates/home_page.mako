@@ -150,16 +150,16 @@
                         <ul class="social-links">
                             <li><a href="https://twitter.com/share"
                                 class="twitter-share-button"
-                                data-url="http://example.com">Tweet</a></li>
+                                data-url="${latest_show.permalink}">Tweet</a></li>
                             <li><div class="g-plusone" data-size="medium"
-                                data-href="http://example.com"></div></li>
+                                data-href="${latest_show.permalink}"></div></li>
                             <li><div class="fb-like"
-                                data-href="http://example.com"
+                                data-href="${latest_show.permalink}"
                                 data-send="false" data-layout="button_count"
                                 data-width="100" data-show-faces="false"
                                 style="vertical-align:top;"></div></li>
                             <li><a
-                                href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fexample.com"
+                                href="http://pinterest.com/pin/create/button/?url=${latest_show.permalink|u}"
                                 class="pin-it-button"
                                 count-layout="horizontal"><img border="0"
                                 src="//assets.pinterest.com/images/PinExt.png"
@@ -240,16 +240,16 @@
                         <ul class="social-links">
                             <li><a href="https://twitter.com/share"
                                 class="twitter-share-button"
-                                data-url="http://example.com">Tweet</a></li>
+                                data-url="${latest_post.permalink}">Tweet</a></li>
                             <li><div class="g-plusone" data-size="medium"
-                                data-href="http://example.com"></div></li>
+                                data-href="${latest_post.permalink}"></div></li>
                             <li><div class="fb-like"
-                                data-href="http://example.com"
+                                data-href="${latest_post.permalink}"
                                 data-send="false" data-layout="button_count"
                                 data-width="100" data-show-faces="false"
                                 style="vertical-align:top;"></div></li>
                             <li><a
-                                href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fexample.com"
+                                href="http://pinterest.com/pin/create/button/?url=${latest_post.permalink|u}"
                                 class="pin-it-button"
                                 count-layout="horizontal"><img border="0"
                                 src="//assets.pinterest.com/images/PinExt.png"
@@ -311,16 +311,17 @@
                     <ul>
                         <li><a href="https://twitter.com/share"
                             class="twitter-share-button" data-lang="en"
-                            data-url="http://frompythonimportpodcast.com"
+                            data-url="${bf.config.site.url}"
                             data-via="__fpip__"
                             data-related="codeshaman,mpirnat,dstanek,mcrute,benjaminws">Tweet</a></li>
                         <li><div class="fb-like"
-                            data-href="http://frompythonimportpodcast.com"
+                            data-href="${bf.config.site.url}"
                             data-send="false" data-layout="button_count"
                             data-width="225" data-show-faces="false"
                             data-colorscheme="light"></div>
                         <li><div class="g-plusone" data-size="medium" data-href="http://frompythonimportpodcast.com"></div></li>
-                        <li><a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Ffrompythonimportpodcast.com" class="pin-it-button" count-layout="horizontal"><img border="0" src="//assets.pinterest.com/images/PinExt.png" title="Pin It" /></a></li>
+                        <li><a
+                            href="http://pinterest.com/pin/create/button/?url=${bf.config.site.url|u}" class="pin-it-button" count-layout="horizontal"><img border="0" src="//assets.pinterest.com/images/PinExt.png" title="Pin It" /></a></li>
                     </ul>
                 </div>
 
