@@ -17,6 +17,10 @@ blog.podcast.image = "/static/content/fpip3d3-300x300.jpg"
 blog.podcast.author = "Chris Miller, Mike Pirnat, Mike Crute, David Stanek, Benjamin W. Smith <christopher@ctmiller.net>"
 blog.podcast.categories = ["Technology", ["Business", "Careers"], ["Education", "Training"]]
 blog.podcast.keywords = "programming, python, software, development"
+blog.podcast.itunes_link = "http://itunes.apple.com/us/podcast/from-python-import-podcast/id525611633"
+blog.podcast.mp3_feed = "http://feeds.feedburner.com/FromPythonImportPodcastmp3"
+blog.podcast.ogg_feed = "http://feeds.feedburner.com/FromPythonImportPodcastogg"
+blog.podcast.full_feed = "http://feeds.feedburner.com/FromPythonImportPodcast"
 
 blog.homepage.recent_shows = 3
 blog.homepage.top_shows = 3
@@ -26,6 +30,8 @@ blog.facebook.enabled = True
 blog.googleplus.enabled = True
 blog.pinterest.enabled = True
 blog.twitter.enabled = True
-blog.twitter.via = "__fpip__"
+blog.twitter.widget = True
+blog.twitter.user = "__fpip__"
 blog.twitter.related = "codeshaman,mpirnat,dstanek,mcrute,benjaminws"
+
 

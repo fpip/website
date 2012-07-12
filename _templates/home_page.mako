@@ -209,18 +209,24 @@
                     <h4>Subscribe</h4>
                     <p>Make sure you never miss an episode!</p>
                     <ul>
+                        % if bf.config.blog.podcast.itunes_link:
                         <li><a
-                            href="http://itunes.apple.com/us/podcast/from-python-import-podcast/id525611633"
+                            href="${bf.config.blog.podcast.itunes_link}"
                             rel="alternate" type="application/rss+xml"
                             class="nice white large radius full-width button">Subscribe in iTunes</a></li>
+                        % endif
+                        % if bf.config.blog.podcast.mp3_feed:
                         <li><a
-                            href="http://feeds.feedburner.com/FromPythonImportPodcastmp3"
+                            href="${bf.config.blog.podcast.mp3_feed}"
                             rel="alternate" type="application/rss+xml"
                             class="nice white large radius full-width button">Subscribe to MP3s</a></li>
+                        % endif
+                        % if bf.config.blog.podcast.ogg_feed:
                         <li><a
-                            href="http://feeds.feedburner.com/FromPythonImportPodcastogg"
+                            href="${bf.config.blog.podcast.ogg_feed}"
                             rel="alternate" type="application/rss+xml"
                             class="nice white large radius full-width button">Subscribe to OGGs</a></li>
+                        % endif
                     </ul>
                 </div>
             </div>
@@ -294,11 +300,13 @@
                     <p><a href="#">More posts</a></p>
                 </div>
 
+                % if bf.config.blog.twitter.widget:
                 <div class="four columns offset-by-one">
                     <h4>Twitter</h4>
                     <p>A little bird told me...</p>
                     <div id="twitter-widget"></div>
                 </div>
+                % endif
             </div>
         </div>
     </section>
@@ -328,7 +336,7 @@
                         <li><a href="https://twitter.com/share"
                             class="twitter-share-button" data-lang="en"
                             data-url="${bf.config.site.url}"
-                            data-via="${bf.config.blog.twitter.via}"
+                            data-via="${bf.config.blog.twitter.user}"
                             data-related="${bf.config.blog.twitter.related}">Tweet</a></li>
                         % endif
                         % if bf.config.blog.facebook.enabled:
@@ -352,17 +360,27 @@
                 <div class="four columns">
                     <h6>Subscribe</h6>
                     <ul>
+                        % if bf.config.blog.podcast.full_feed:
                         <li><img src="/static/images/misc/RSS-icon-tiny.gif">
-                            <a href="http://feeds.feedburner.com/FromPythonImportPodcast">Full feed</a> - all posts and episodes</li>
+                            <a href="${bf.config.blog.podcast.full_feed">Full feed</a> - all posts and episodes</li>
+                        % endif
+                        % if bf.config.blog.podcast.mp3_feed:
                         <li><img src="/static/images/misc/RSS-icon-tiny.gif">
-                            <a href="http://feeds.feedburner.com/FromPythonImportPodcastmp3">MP3s</a> - only episodes, MP3 enclosures</li>
+                            <a href="${bf.config.blog.podcast.mp3_feed}">MP3s</a> - only episodes, MP3 enclosures</li>
+                        % endif
+                        % if bf.config.blog.podcast.ogg_feed:
                         <li><img src="/static/images/misc/RSS-icon-tiny.gif">
-                            <a href="http://feeds.feedburner.com/FromPythonImportPodcastogg">OGGs</a> - only episodes, OGG enclosures</li>
+                            <a href="${bf.config.blog.podcast.ogg_feed}">OGGs</a> - only episodes, OGG enclosures</li>
+                        % endif
+                        % if bf.config.blog.podcast.itunes_link:
                         <li><img src="/static/images/misc/itunes-tiny.png">
-                            <a href="http://itunes.apple.com/us/podcast/from-python-import-podcast/id525611633">iTunes</a> - find us in the iTunes store</li>
+                            <a href="${bf.config.blog.podcast.itunes_link">iTunes</a> - find us in the iTunes store</li>
+                        % endif
+                        % if bf.config.blog.twitter.user:
                         <li><img src="http://twitter.com/images/three_circles/twitter-bird-16x16.png" width="12" height="12">
-                            <a href="http://twitter.com/__fpip__">Twitter</a> -
+                            <a href="http://twitter.com/${bf.config.twitter.user|u}">Twitter</a> -
                             follow us, say hi!</li>
+                        % endif
                     </ul>
                 </div>
 
@@ -375,7 +393,6 @@
                         <input type="submit" value="Send" class="nice small black radius button">
                     </form>
                 </div>
-
 
             </div>
 
@@ -420,7 +437,9 @@
 	<script src="/static/js/app.js"></script>
 
     <!-- TODO: Google analytics -->
+% if bf.config.blog.twitter.widget:
 <script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+% endif
 % if bf.config.blog.pinterest.enabled:
 <script type="text/javascript" src="//assets.pinterest.com/js/pinit.js"></script>
 % endif
@@ -431,6 +450,7 @@ $(function() {
     $('input, textarea').placeholder();
 });
 
+% if bf.config.blog.twitter.widget:
 // Twitter widget
 new TWTR.Widget({
   id: 'twitter-widget',
@@ -458,7 +478,8 @@ new TWTR.Widget({
     live: true,
     behavior: 'all'
   }
-}).render().setUser('__fpip__').start();
+  }).render().setUser('${bf.config.blog.twitter.user}').start();
+% endif
 
 % if bf.config.blog.twitter.enabled:
 !function(d,s,id){var
