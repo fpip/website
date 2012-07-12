@@ -17,3 +17,5 @@ blog.podcast.image = "/static/content/fpip3d3-300x300.jpg"
 blog.podcast.author = "Chris Miller, Mike Pirnat, Mike Crute, David Stanek, Benjamin W. Smith <christopher@ctmiller.net>"
 blog.podcast.categories = ["Technology", ["Business", "Careers"], ["Education", "Training"]]
 blog.podcast.keywords = "programming, python, software, development"
+
+blog.homepage.top_shows = 3

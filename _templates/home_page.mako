@@ -179,9 +179,9 @@
                         <div class="five columns">
                             <h5>Top Episodes</h5>
                             <ul>
-                                <li><a href="#">Episode ABC</a></li>
-                                <li><a href="#">Episode DEF</a></li>
-                                <li><a href="#">Episode GHI</a></li>
+                                % for post in top_shows:
+                                <li><a href="${post.permalink}">${post.title}</a></li>
+                                % endfor
                             </ul>
                         </div>
                     </div>
