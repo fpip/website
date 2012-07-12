@@ -177,12 +177,14 @@
                             </ul>
                         </div>
                         <div class="five columns">
+                            % if top_shows:
                             <h5>Top Episodes</h5>
                             <ul>
                                 % for post in top_shows:
                                 <li><a href="${post.permalink}">${post.title}</a></li>
                                 % endfor
                             </ul>
+                            % endif
                         </div>
                     </div>
                     <p><a href="#">More Episodes</a></p>

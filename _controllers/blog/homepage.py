@@ -10,15 +10,23 @@ def run():
 def write_home_page():
     path = bf.util.path_join(blog.path, "index.html")
     blog.logger.info(u"Writing custom homepage of awesomeness: " + path)
+
+    try:
+        top_shows = get_top_shows(bf.config.blog.homepage.top_shows)
+    except:
+        blog.logger.exception(u"Error getting top show list")
+        top_shows = []
+
     env = {
         'shows': blog.shows,
         'posts': blog.posts,
-        'top_shows': top_shows(bf.config.blog.homepage.top_shows),
+        'top_shows': top_shows,
     }
+
     bf.writer.materialize_template("home_page.mako", path, env)
 
 
-def top_shows(how_many):
+def get_top_shows(how_many):
     # get the raw data
     f = open("downloads.txt", 'r')
     data = f.read()
