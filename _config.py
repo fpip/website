@@ -22,7 +22,9 @@ blog.podcast.mp3_feed = "http://feeds.feedburner.com/FromPythonImportPodcastmp3"
 blog.podcast.ogg_feed = "http://feeds.feedburner.com/FromPythonImportPodcastogg"
 blog.podcast.full_feed = "http://feeds.feedburner.com/FromPythonImportPodcast"
 
+blog.homepage.recent_posts = 3
 blog.homepage.recent_shows = 3
+blog.homepage.featured_posts = 3
 blog.homepage.top_shows = 3
 
 # social sharing config

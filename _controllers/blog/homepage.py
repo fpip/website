@@ -11,19 +11,24 @@ def write_home_page():
     path = bf.util.path_join(blog.path, "index.html")
     blog.logger.info(u"Writing custom homepage of awesomeness: " + path)
 
+    recent_shows = blog.shows[1:bf.config.blog.homepage.recent_shows+1]
+    recent_posts = blog.posts[1:bf.config.blog.homepage.recent_posts+1]
+
     try:
         top_shows = get_top_shows(bf.config.blog.homepage.top_shows)
     except:
         blog.logger.exception(u"Error getting top show list")
         top_shows = []
 
-    recent_shows = blog.shows[1:bf.config.blog.homepage.recent_shows+1]
+    featured_posts = get_featured_posts(bf.config.blog.homepage.featured_posts)
 
     env = {
         'shows': blog.shows,
         'posts': blog.posts,
         'recent_shows': recent_shows,
+        'recent_posts': recent_posts,
         'top_shows': top_shows,
+        'featured_posts': featured_posts,
         'latest_show': blog.shows[0],
         'latest_post': blog.posts[0],
     }
@@ -58,3 +63,8 @@ def get_top_shows(how_many):
                     or (post.ogg_file and episode + ".ogg" in post.ogg_file):
                 top_shows.append(post)
     return top_shows
+
+
+def get_featured_posts(how_many):
+    featured_posts = [post for post in blog.posts if post.featured][:how_many]
+    return featured_posts

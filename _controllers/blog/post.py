@@ -55,6 +55,8 @@ reserved_field_names = {
     "filter"     :"synonym for filters",
     "draft"      :"If 'true' or 'True', the post is considered to be only a "\
         "draft and not to be published.",
+    "featured"   :"If 'true' or 'True', the post is marked as featured for "\
+        "special display.",
     "source"     :"Reserved internally",
     "yaml"       :"Reserved internally",
     "content"    :"Reserved internally",
@@ -92,6 +94,7 @@ class Post(object):
         self.guid = None
         self.slug = None
         self.draft = False
+        self.featured = False
         self.filters = None
         self.mp3_file = None
         self.ogg_file = None

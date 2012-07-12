@@ -187,7 +187,9 @@
                                 <li><a href="${post.permalink}">${post.title}</a></li>
                                 % endfor
                             </ul>
+                            % if len(shows) > len(recent_shows) + 1:
                             <p><a href="#">More Episodes</a></p>
+                            % endif
                         </div>
                         % endif
 
@@ -235,7 +237,7 @@
     % endif
 
     <!-- read  -->
-    % if latest_post:
+    % if latest_post or bf.config.twitter.widget:
     <section id="read">
         <div class="container">
             <div class="row">
@@ -246,6 +248,7 @@
 
             <div class="row">
                 <div class="seven columns">
+                    % if latest_post:
                     <article>
                         <h4><a href="#">${latest_post.title}</a></h4>
                         <p>Published ${latest_post.date.strftime("%B %d, %Y")}</p>
@@ -278,26 +281,36 @@
                             % endif
                         </ul>
                     </article>
+                    % endif
 
+                    % if recent_posts or featured_posts:
                     <div class="row">
+                        % if recent_posts:
                         <div class="five columns">
                             <h5>Previous Posts</h5>
                             <ul>
-                                <li><a href="#">Post - 1</a></li>
-                                <li><a href="#">Post - 2</a></li>
-                                <li><a href="#">Post - 3</a></li>
+                                % for post in recent_posts:
+                                    <li><a href="${post.permalink}">${post.title}</a></li>
+                                % endfor
                             </ul>
+                            % if len(posts) > len(recent_posts) + 1:
+                            <p><a href="#">More posts</a></p>
+                            % endif
                         </div>
+                        % endif
+
+                        % if featured_posts:
                         <div class="five columns">
                             <h5>Featured Posts</h5>
                             <ul>
-                                <li><a href="#">Post - X</a></li>
-                                <li><a href="#">Post - Y</a></li>
-                                <li><a href="#">Post - Z</a></li>
+                                % for post in featured_posts:
+                                <li><a href="${post.permalink}">${post.title}</a></li>
+                                % endfor
                             </ul>
                         </div>
+                        % endif
                     </div>
-                    <p><a href="#">More posts</a></p>
+                    % endif
                 </div>
 
                 % if bf.config.blog.twitter.widget:
