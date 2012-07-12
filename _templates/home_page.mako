@@ -252,23 +252,23 @@
                         ${latest_post.content}
 
                         <ul class="social-links">
-                            % if bf.config.twitter.enabled:
+                            % if bf.config.blog.twitter.enabled:
                             <li><a href="https://twitter.com/share"
                                 class="twitter-share-button"
                                 data-url="${latest_post.permalink}">Tweet</a></li>
                             % endif
-                            % if bf.config.googleplus.enabled:
+                            % if bf.config.blog.googleplus.enabled:
                             <li><div class="g-plusone" data-size="medium"
                                 data-href="${latest_post.permalink}"></div></li>
                             % endif
-                            % if bf.config.facebook.enabled:
+                            % if bf.config.blog.facebook.enabled:
                             <li><div class="fb-like"
                                 data-href="${latest_post.permalink}"
                                 data-send="false" data-layout="button_count"
                                 data-width="100" data-show-faces="false"
                                 style="vertical-align:top;"></div></li>
                             % endif
-                            % if bf.config.pinterest.enabled:
+                            % if bf.config.blog.pinterest.enabled:
                             <li><a
                                 href="http://pinterest.com/pin/create/button/?url=${latest_post.permalink|u}"
                                 class="pin-it-button"
@@ -362,7 +362,7 @@
                     <ul>
                         % if bf.config.blog.podcast.full_feed:
                         <li><img src="/static/images/misc/RSS-icon-tiny.gif">
-                            <a href="${bf.config.blog.podcast.full_feed">Full feed</a> - all posts and episodes</li>
+                            <a href="${bf.config.blog.podcast.full_feed}">Full feed</a> - all posts and episodes</li>
                         % endif
                         % if bf.config.blog.podcast.mp3_feed:
                         <li><img src="/static/images/misc/RSS-icon-tiny.gif">
@@ -374,11 +374,11 @@
                         % endif
                         % if bf.config.blog.podcast.itunes_link:
                         <li><img src="/static/images/misc/itunes-tiny.png">
-                            <a href="${bf.config.blog.podcast.itunes_link">iTunes</a> - find us in the iTunes store</li>
+                            <a href="${bf.config.blog.podcast.itunes_link}">iTunes</a> - find us in the iTunes store</li>
                         % endif
                         % if bf.config.blog.twitter.user:
-                        <li><img src="http://twitter.com/images/three_circles/twitter-bird-16x16.png" width="12" height="12">
-                            <a href="http://twitter.com/${bf.config.twitter.user|u}">Twitter</a> -
+                        <li><img src="http://twitter.com/images/resources/twitter-bird-16x16.png" width="12" height="12">
+                            <a href="http://twitter.com/${bf.config.blog.twitter.user|u}">Twitter</a> -
                             follow us, say hi!</li>
                         % endif
                     </ul>
