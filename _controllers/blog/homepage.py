@@ -17,9 +17,12 @@ def write_home_page():
         blog.logger.exception(u"Error getting top show list")
         top_shows = []
 
+    recent_shows = blog.shows[1:bf.config.blog.homepage.recent_shows+1]
+
     env = {
         'shows': blog.shows,
         'posts': blog.posts,
+        'recent_shows': recent_shows,
         'top_shows': top_shows,
     }
 

@@ -169,12 +169,15 @@
 
                     <div class="row">
                         <div class="five columns">
+                            % if recent_shows:
                             <h5>Previous Episodes</h5>
                             <ul>
-                                <li><a href="#">Episode XYZ - 1</a></li>
-                                <li><a href="#">Episode XYZ - 2</a></li>
-                                <li><a href="#">Episode XYZ - 3</a></li>
+                                % for post in recent_shows:
+                                <li><a href="${post.permalink}">${post.title}</a></li>
+                                % endfor
                             </ul>
+                            <p><a href="#">More Episodes</a></p>
+                            % endif
                         </div>
                         <div class="five columns">
                             % if top_shows:
@@ -187,7 +190,6 @@
                             % endif
                         </div>
                     </div>
-                    <p><a href="#">More Episodes</a></p>
 
                 </div>
                 <div class="four columns offset-by-one">

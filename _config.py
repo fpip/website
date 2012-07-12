@@ -18,4 +18,5 @@ blog.podcast.author = "Chris Miller, Mike Pirnat, Mike Crute, David Stanek, Benj
 blog.podcast.categories = ["Technology", ["Business", "Careers"], ["Education", "Training"]]
 blog.podcast.keywords = "programming, python, software, development"
 
+blog.homepage.recent_shows = 3
 blog.homepage.top_shows = 3
