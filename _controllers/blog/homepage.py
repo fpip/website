@@ -24,6 +24,8 @@ def write_home_page():
         'posts': blog.posts,
         'recent_shows': recent_shows,
         'top_shows': top_shows,
+        'latest_show': blog.shows[0],
+        'latest_post': blog.posts[0],
     }
 
     bf.writer.materialize_template("home_page.mako", path, env)

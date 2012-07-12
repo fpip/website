@@ -110,6 +110,7 @@
 
 
     <!-- listen -->
+    % if latest_show:
     <section id="listen">
         <div class="container">
             <div class="row">
@@ -120,30 +121,30 @@
             <div class="row">
                 <div class="seven columns">
                     <article>
-                    <h4><a href="${shows[0].permapath()}">${shows[0].title}</a></h4>
-                        <p>Published ${shows[0].date.strftime("%B %d, %Y")}
+                    <h4><a href="${latest_show.permapath()}">${latest_show.title}</a></h4>
+                        <p>Published ${latest_show.date.strftime("%B %d, %Y")}
                             % if bf.config.blog.podcast.explicit == "yes":
                                 | <img src="/static/images/misc/explicit.png" alt="May contain explicit content">
                             %endif
                             </p>
-                            ${shows[0].content}
+                            ${latest_show.content}
                         <nav>
                             <p>
-                                <a href="${shows[0].permapath()}">Show Notes</a>
-                                % if shows[0].mp3_file:
-                                    | <a href="${shows[0].mp3_file}">Download MP3</a>
+                                <a href="${latest_show.permapath()}">Show Notes</a>
+                                % if latest_show.mp3_file:
+                                    | <a href="${bf.config.site.url}/${latest_show.mp3_file}">Download MP3</a>
                                 % endif
-                                % if shows[0].ogg_file:
-                                    | <a href="${shows[0].ogg_file}">Download OGG</a>
+                                % if latest_show.ogg_file:
+                                    | <a href="${bf.config.site.url}/${latest_show.ogg_file}">Download OGG</a>
                                 % endif
                             </p>
                         </nav>
                         <p><audio controls preload="metadata">
-                        % if shows[0].mp3_file:
-                            <source type="audio/mpeg" src="${shows[0].mp3_file}" />
+                        % if latest_show.mp3_file:
+                            <source type="audio/mpeg" src="${bf.config.site.url}/${latest_show.mp3_file}" />
                         % endif
-                        % if shows[0].ogg_file:
-                            <source type="audio/ogg" src="${shows[0].ogg_file}" />
+                        % if latest_show.ogg_file:
+                            <source type="audio/ogg" src="${bf.config.site.url}/${latest_show.ogg_file}" />
                         % endif
                         </audio></p>
                         <ul class="social-links">
@@ -217,8 +218,10 @@
             </div>
         </div>
     </section>
+    % endif
 
     <!-- read  -->
+    % if latest_post:
     <section id="read">
         <div class="container">
             <div class="row">
@@ -230,9 +233,9 @@
             <div class="row">
                 <div class="seven columns">
                     <article>
-                        <h4><a href="#">${posts[0].title}</a></h4>
-                        <p>Published ${posts[0].date.strftime("%B %d, %Y")}</p>
-                        ${posts[0].content}
+                        <h4><a href="#">${latest_post.title}</a></h4>
+                        <p>Published ${latest_post.date.strftime("%B %d, %Y")}</p>
+                        ${latest_post.content}
 
                         <ul class="social-links">
                             <li><a href="https://twitter.com/share"
@@ -257,7 +260,7 @@
 
                     <div class="row">
                         <div class="five columns">
-                            <h5>Previous shows</h5>
+                            <h5>Previous Posts</h5>
                             <ul>
                                 <li><a href="#">Post - 1</a></li>
                                 <li><a href="#">Post - 2</a></li>
@@ -265,7 +268,7 @@
                             </ul>
                         </div>
                         <div class="five columns">
-                            <h5>Featured shows</h5>
+                            <h5>Featured Posts</h5>
                             <ul>
                                 <li><a href="#">Post - X</a></li>
                                 <li><a href="#">Post - Y</a></li>
@@ -284,6 +287,7 @@
             </div>
         </div>
     </section>
+    % endif
 
     <!-- footer -->
     <footer id="site-footer">
