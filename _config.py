@@ -36,4 +36,4 @@ blog.twitter.widget = True
 blog.twitter.user = "__fpip__"
 blog.twitter.related = "codeshaman,mpirnat,dstanek,mcrute,benjaminws"
 
-
+blog.disqus.enabled = True
