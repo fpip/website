@@ -58,7 +58,7 @@
             <div class="row">
                     <ul class="nav-bar">
                         <li><a href="/">Home</a></li>
-                        <li><a href="#">About</a></li>
+                        <li><a href="/about">About</a></li>
                         <li><a href="#">Shows</a></li>
                         <li><a href="#">Blog</a></li>
                         <li><a href="#">Goodies</a></li>
@@ -90,8 +90,8 @@
                 <div class="two columns">
                     <h6>Navigate</h6>
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/about">About</a></li>
                         <li><a href="#">Shows</a></li>
                         <li><a href="#">Blog</a></li>
                         <li><a href="#">Goodies</a></li>
