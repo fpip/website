@@ -110,7 +110,7 @@
                             <h5>Previous Episodes</h5>
                             <ul>
                                 % for post in recent_shows:
-                                <li><a href="${post.permalink}">${post.title}</a></li>
+                                <li><a href="${post.permapath()}">${post.title}</a></li>
                                 % endfor
                             </ul>
                             % if len(shows) > len(recent_shows) + 1:
@@ -124,7 +124,7 @@
                             <h5>Top Episodes</h5>
                             <ul>
                                 % for post in top_shows:
-                                <li><a href="${post.permalink}">${post.title}</a></li>
+                                <li><a href="${post.permapath()}">${post.title}</a></li>
                                 % endfor
                             </ul>
                         </div>
@@ -176,7 +176,7 @@
                 <div class="seven columns">
                     % if latest_post:
                     <article>
-                        <h4><a href="#">${latest_post.title}</a></h4>
+                        <h4><a href="${latest_post.permapath()}">${latest_post.title}</a></h4>
                         <p>Published ${latest_post.date.strftime("%B %d, %Y")}</p>
                         ${latest_post.content}
 
@@ -216,7 +216,7 @@
                             <h5>Previous Posts</h5>
                             <ul>
                                 % for post in recent_posts:
-                                    <li><a href="${post.permalink}">${post.title}</a></li>
+                                <li><a href="${post.permapath()}">${post.title}</a></li>
                                 % endfor
                             </ul>
                             % if len(posts) > len(recent_posts) + 1:
@@ -230,7 +230,7 @@
                             <h5>Featured Posts</h5>
                             <ul>
                                 % for post in featured_posts:
-                                <li><a href="${post.permalink}">${post.title}</a></li>
+                                <li><a href="${post.permapath()}">${post.title}</a></li>
                                 % endfor
                             </ul>
                         </div>
