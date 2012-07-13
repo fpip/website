@@ -12,7 +12,7 @@ def write_home_page():
     blog.logger.info(u"Writing custom homepage of awesomeness: " + path)
 
     recent_shows = blog.shows[1:bf.config.blog.homepage.recent_shows+1]
-    recent_posts = blog.posts[1:bf.config.blog.homepage.recent_posts+1]
+    recent_posts = blog.posts_minus_shows[1:bf.config.blog.homepage.recent_posts+1]
 
     try:
         top_shows = get_top_shows(bf.config.blog.homepage.top_shows)
@@ -30,7 +30,7 @@ def write_home_page():
         'top_shows': top_shows,
         'featured_posts': featured_posts,
         'latest_show': blog.shows[0],
-        'latest_post': blog.posts[0],
+        'latest_post': blog.posts_minus_shows[0],
     }
 
     bf.writer.materialize_template("home_page.mako", path, env)

@@ -26,7 +26,7 @@ def run():
     blog.posts = post.parse_posts("_posts")
 
     blog.shows = [x for x in blog.posts if post.Category('Shows') in x.categories]
-    blog.posts = [x for x in blog.posts if post.Category('Shows') not in x.categories]
+    blog.posts_minus_shows = [x for x in blog.posts if post.Category('Shows') not in x.categories]
 
     blog.dir = bf.util.path_join(bf.writer.output_dir, blog.path)
 
