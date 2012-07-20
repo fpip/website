@@ -156,11 +156,13 @@
 
                 <div class="four columns">
                     <h6>Contact</h6>
-                    <form class="nice" action="#" method="POST">
+                    <form id="contact" class="nice" action="${bf.config.site.url}/contact-handler/" method="POST">
                         <input type="text" name="name" class="input-text expand" placeholder="Name">
                         <input type="email" name="email" class="input-text expand" placeholder="Email Address">
                         <textarea name="message" rows="3" class="expand" placeholder="Your Message"></textarea>
-                        <input type="submit" value="Send" class="nice small black radius button">
+                        <input type="submit" value="Send" name="Send" class="nice small black radius button">
+                        <input type="hidden" name="mailer.form-key" value="fpip-contact">
+                        <input type="hidden" name="mailer.fields.ignore" value="Send">
                     </form>
                 </div>
 
@@ -218,6 +220,7 @@ $(function() {
 
 % if bf.config.blog.twitter.widget:
 // Twitter widget
+/*
 new TWTR.Widget({
   id: 'twitter-widget',
   version: 2,
@@ -245,6 +248,7 @@ new TWTR.Widget({
     behavior: 'all'
   }
   }).render().setUser('${bf.config.blog.twitter.user}').start();
+  */
 % endif
 
 % if bf.config.blog.twitter.enabled:
@@ -282,6 +286,19 @@ $(document).ready(function() {
         $('a.nav-bar-toggle').toggle();
         return false;
     });
+
+    /*
+    $("#contact").submit(function(event) {
+        event.preventDefault();
+            
+        var $form = $(this);
+        var url = $form.attr('action');
+        var jqxhr = $.post(url, $form.serialize())
+        .success(function(data) { alert("win!"); console.info(data); })
+            .error(function(data) { alert("fail."); console.error(data); })
+            .complete(function() { alert("complete"); });
+    });
+    */
 });
 </script>
 
