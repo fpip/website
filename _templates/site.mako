@@ -59,10 +59,10 @@
                     <ul class="nav-bar">
                         <li><a href="/">Home</a></li>
                         <li><a href="/about">About</a></li>
-                        <li><a href="#">Shows</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Goodies</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="/shows">Shows</a></li>
+                        <li><a href="/blog">Blog</a></li>
+                        <!--<li><a href="/goodies">Goodies</a></li>-->
+                        <li><a href="#contact">Contact</a></li>
                         <li id="search">
                     <form action="http://www.google.com/search" method="get">
                         <input type="search" name="q" placeholder="Search">
@@ -92,9 +92,9 @@
                     <ul>
                         <li><a href="/">Home</a></li>
                         <li><a href="/about">About</a></li>
-                        <li><a href="#">Shows</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Goodies</a></li>
+                        <li><a href="/shows">Shows</a></li>
+                        <li><a href="/blog">Blog</a></li>
+                        <!--<li><a href="/goodies">Goodies</a></li>-->
                         <li><a href="#">Back to Top</a></li>
                     </ul>
                 </div>
@@ -155,6 +155,7 @@
                 </div>
 
                 <div class="four columns">
+                    <a name="contact"></a>
                     <h6>Contact</h6>
                     <form id="contact" class="nice" action="${bf.config.site.url}/contact-handler/" method="POST">
                         <input type="text" name="name" class="input-text expand" placeholder="Name">
