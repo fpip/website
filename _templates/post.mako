@@ -53,10 +53,7 @@
         -->
         </div>
 
-        <div class="four columns offset-by-one">
-            <p>Hello, sidebar world.</p>
-
-        </div>
+        <%include file="sidebar.mako" />
     </div>
 </div>
 
