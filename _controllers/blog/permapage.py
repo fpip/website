@@ -23,7 +23,7 @@ def write_permapages():
         blog.logger.exception(u"Error getting top show list")
         top_shows = []
     featured_posts = podcastutils.get_featured_posts(bf.config.blog.homepage.featured_posts)
-    
+
     for i, post in enumerate(blog.posts):
         if post.permalink:
             path = site_re.sub("", post.permalink)
