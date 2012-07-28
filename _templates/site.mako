@@ -220,7 +220,8 @@ $(function() {
 
 % if bf.config.blog.twitter.widget:
 // Twitter widget
-/*
+
+twitter_widget = function() {
 new TWTR.Widget({
   id: 'twitter-widget',
   version: 2,
@@ -248,7 +249,7 @@ new TWTR.Widget({
     behavior: 'all'
   }
   }).render().setUser('${bf.config.blog.twitter.user}').start();
-  */
+}
 % endif
 
 % if bf.config.blog.twitter.enabled:
@@ -286,6 +287,10 @@ $(document).ready(function() {
         $('a.nav-bar-toggle').toggle();
         return false;
     });
+
+    if($("#twitter-widget")) {
+        twitter_widget();
+    }
 
     /*
     $("#contact").submit(function(event) {
