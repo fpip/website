@@ -1,6 +1,7 @@
-<%inherit file="site.mako" />
+<%inherit file="standard_page.mako" />
+
 %for post in posts:
-  <%include file="post.mako" args="post=post" />
+<%include file="post_excerpt.mako" args="post=post" />
 %endfor
 
 <div class="pagination">
