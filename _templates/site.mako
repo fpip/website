@@ -78,7 +78,7 @@
 
     <%block name="header"/>
 
-    ${self.body()}
+    ${next.body()}
     
     <%block name="footer">
 

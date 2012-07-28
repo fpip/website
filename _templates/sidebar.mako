@@ -1,5 +1,3 @@
-<div class="four columns offset-by-one">
-
 <h4>Top Episodes</h4>
 
 <h4>Recent Episodes</h4>

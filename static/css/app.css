@@ -36,12 +36,12 @@ h3,h4,h5,h6 {
 
 h5 {
     border-bottom: 1px solid #ccc;
-    -webkit-border-image: -webkit-gradient(linear, left top, right top, from(white), to(#ccc));
+    -webkit-border-image: -webkit-linear-gradient(left top, right top, from(white), to(#ccc)) -webkit-gradient(linear, left top, right top, from(white), to(#ccc));
 }
 
 section h3 {
     border-bottom: 1px solid #ccc;
-    -webkit-border-image: -webkit-gradient(linear, left top, right top, from(white), to(#ccc));
+    -webkit-border-image: -webkit-linear-gradient(left top, right top, from(white), to(#ccc)) -webkit-gradient(linear, left top, right top, from(white), to(#ccc));
     font-family: 'Oswald',"Helvetica Neue", "Helvetica", Arial, Verdana, sans-serif;
     font-weight: 300;
     text-transform: uppercase;
@@ -56,6 +56,22 @@ a:hover {
 }
 a:active {
     color: #b471e1;
+}
+
+#pagehead {
+    margin-top: 1em;
+    margin-bottom: 3em;
+}
+
+#pagehead img {
+    float: left;
+    margin-top: 0.2em;
+    margin-right: 1em;
+}
+
+#pagehead h1 {
+    display: inline;
+    text-transform: lowercase;
 }
 
 #masthead {
