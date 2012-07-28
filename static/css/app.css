@@ -65,7 +65,7 @@ a:active {
 
 #pagehead img {
     float: left;
-    margin-top: 0.2em;
+    margin-top: 0.3em;
     margin-right: 1em;
 }
 
@@ -111,6 +111,9 @@ a:active {
     }
     #masthead h1 {
         font-size: 4.5em;
+    }
+    #pagehead img {
+        margin-top: -0.2em;
     }
 }
 

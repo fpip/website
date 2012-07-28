@@ -280,6 +280,12 @@ $(document).ready(function() {
             }
             $('#nav-bar-fat').css({display: ""});
         }
+
+        if($(document).width() >= 547) {
+            $("#pagehead img").attr('src', '/static/images/fpip/4-up-square-50.jpg');
+        } else {
+            $("#pagehead img").attr('src', '/static/images/fpip/4-up-square-100.jpg');
+        }
     });
 
     $('a.nav-bar-toggle').click(function() {
