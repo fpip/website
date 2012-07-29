@@ -220,7 +220,6 @@ $(function() {
 
 % if bf.config.blog.twitter.widget:
 // Twitter widget
-
 twitter_widget = function() {
 new TWTR.Widget({
   id: 'twitter-widget',
@@ -253,6 +252,7 @@ new TWTR.Widget({
 % endif
 
 % if bf.config.blog.twitter.enabled:
+// twitter buttons
 !function(d,s,id){var
     js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
 % endif
@@ -267,8 +267,10 @@ new TWTR.Widget({
 % endif
 
 $(document).ready(function() {
+    // hide address bar in iOS
     if(!pageYOffset) window.scrollTo(1,0);
 
+    // special page resize handling
     $(window).bind('resize', function() {
         if($(document).width() >= 767) {
             var nav_bar = $('#nav-bar-fat')[0]
@@ -288,17 +290,19 @@ $(document).ready(function() {
         }
     });
 
+    // nav bar toggle handler
     $('a.nav-bar-toggle').click(function() {
         $('#nav-bar-fat').slideToggle(100);
         $('a.nav-bar-toggle').toggle();
         return false;
     });
 
+    // twitter widget
     if($("#twitter-widget")) {
         twitter_widget();
     }
 
-    /*
+    // contact form handler
     $("#contact").submit(function(event) {
         event.preventDefault();
             
@@ -309,21 +313,19 @@ $(document).ready(function() {
             .error(function(data) { alert("fail."); console.error(data); })
             .complete(function() { alert("complete"); });
     });
-    */
-
-
-    // Google Analytics
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-15534287-1']);
-    _gaq.push(['_trackPageview']);
-
-    (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-
 });
+
+// Google Analytics
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-15534287-1']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+
 </script>
 
     </%block>
