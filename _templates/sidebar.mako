@@ -18,7 +18,7 @@
     <li><a href="${post.permapath()}">${post.title}</a></li>
     % endfor
 </ul>
-<p><a href="/shows">More Episodes</a></p>
+<p><a href="/episodes">More Episodes</a></p>
 </section>
 
 <section>

@@ -114,7 +114,7 @@
                                 % endfor
                             </ul>
                             % if len(shows) > len(recent_shows) + 1:
-                            <p><a href="/shows">More Episodes</a></p>
+                            <p><a href="/episodes">More Episodes</a></p>
                             % endif
                         </div>
                         % endif

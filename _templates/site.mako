@@ -59,7 +59,7 @@
                     <ul class="nav-bar">
                         <li><a href="/">Home</a></li>
                         <li><a href="/about">About</a></li>
-                        <li><a href="/shows">Shows</a></li>
+                        <li><a href="/episodes">Episodes</a></li>
                         <li><a href="/blog">Blog</a></li>
                         <!--<li><a href="/goodies">Goodies</a></li>-->
                         <li><a href="#contact">Contact</a></li>
@@ -92,7 +92,7 @@
                     <ul>
                         <li><a href="/">Home</a></li>
                         <li><a href="/about">About</a></li>
-                        <li><a href="/shows">Shows</a></li>
+                        <li><a href="/episodes">Episodes</a></li>
                         <li><a href="/blog">Blog</a></li>
                         <!--<li><a href="/goodies">Goodies</a></li>-->
                         <li><a href="#">Back to Top</a></li>
