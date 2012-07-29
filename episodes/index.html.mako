@@ -4,6 +4,6 @@
 
 <ul>
     %for post in bf.config.controllers.blog.shows:
-        <li><a href="${post.permapath}">${post.title}</a></li>
+        <li><a href="${post.permapath()}">${post.title}</a></li>
     %endfor
 </ul>
