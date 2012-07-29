@@ -21,4 +21,10 @@ The new site features:
 We'll probably still be messing with a few things and will add some features
 that we didn't have time to get to in our mad dash to get live, so stay tuned.
 
-Plus, now we can actually focus on maybe making a few new episodes.  Madness!
+If you had subscribed in iTunes, please check to make sure that's still going
+on and resubscribe if need be; apparently we had a damaged feed a month or two
+ago and fell out of the iTunes listings.  (Yes, we know, this totally sucks and
+we're idiots. No one feels worse about it than we do.)
+
+On the plus side, now we can actually focus on maybe making a few new episodes.
+Madness!
