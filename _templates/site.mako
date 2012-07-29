@@ -157,7 +157,7 @@
                 <div class="four columns">
                     <a name="contact"></a>
                     <h6>Contact</h6>
-                    <form id="contact" class="nice" action="${bf.config.site.url}/contact-handler/" method="POST">
+                    <form id="contact" class="nice" action="/contact-handler/" method="POST">
                         <input type="text" name="name" class="input-text expand" placeholder="Name">
                         <input type="email" name="email" class="input-text expand" placeholder="Email Address">
                         <textarea name="message" rows="3" class="expand" placeholder="Your Message"></textarea>
@@ -309,9 +309,9 @@ $(document).ready(function() {
         var $form = $(this);
         var url = $form.attr('action');
         var jqxhr = $.post(url, $form.serialize())
-        .success(function(data) { alert("win!"); console.info(data); })
-            .error(function(data) { alert("fail."); console.error(data); })
-            .complete(function() { alert("complete"); });
+        .success(function(data) { alert("Got it, thanks!"); $form.reset(); console.info(data); })
+        .error(function(data) { alert("Woops, something broke; yell at @mcrute, okay?"); console.error(data); })
+        .complete(function() { });
     });
 });
 
