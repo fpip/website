@@ -16,7 +16,9 @@
 <div class="container">
     <div class="row">
         <div class="seven columns">
+            <article>
             ${next.body()}
+            </article>
         </div>
 
         <div class="four columns offset-by-one">

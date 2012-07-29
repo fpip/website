@@ -277,6 +277,30 @@ article .social-links li {
 #sidebar section {
     margin-bottom: 2em;
 }
+
+#about-hosts {
+    margin-top: 2em;
+}
+#about-hosts h3 {
+    margin-bottom: 1em;
+}
+
+#about-hosts section {
+    clear: both;
+    margin-bottom: 3em;
+}
+
+#about-hosts section.left img {
+    float: left;
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
+
+#about-hosts section.right img {
+    float: right;
+    margin-left: 1em;
+    margin-bottom: 1em;
+}
 /* -----------------------------------------
    Page Name 1
 ----------------------------------------- */
