@@ -1,0 +1,315 @@
+/* Foundation v2.2.1 http://foundation.zurb.com */
+/* Artfully masterminded by ZURB  */
+
+/* --------------------------------------------------
+   Table of Contents
+-----------------------------------------------------
+:: Notes: Colors
+:: Shared Styles
+:: Page Name 1
+:: Page Name 2
+*/
+
+/* -----------------------------------------
+   Notes: Colors
+ 
+    * python blue #3773a5
+    * python yellow #ffe85b
+    * arrow green #00a651
+    * podcast purple #b471e1
+    * podcast lavender #ca99ea
+    * balloon cyan #89cfe3
+----------------------------------------- */
+
+
+/* -----------------------------------------
+   Shared Styles
+----------------------------------------- */
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Cabin',"Helvetica Neue", "Helvetica", Arial, Verdana, sans-serif;
+}
+
+h3,h4,h5,h6 {
+    color: #333;
+}
+
+h5 {
+    border-bottom: 1px solid #ccc;
+    -webkit-border-image: -webkit-linear-gradient(left top, right top, from(white), to(#ccc)) -webkit-gradient(linear, left top, right top, from(white), to(#ccc));
+}
+
+section h3 {
+    border-bottom: 1px solid #ccc;
+    -webkit-border-image: -webkit-linear-gradient(left top, right top, from(white), to(#ccc)) -webkit-gradient(linear, left top, right top, from(white), to(#ccc));
+    font-family: 'Oswald',"Helvetica Neue", "Helvetica", Arial, Verdana, sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #555;
+}
+
+a {
+    color: #3773a5;
+}
+a:hover {
+    color: #00a651;
+}
+a:active {
+    color: #b471e1;
+}
+
+#pagehead {
+    margin-top: 1em;
+    margin-bottom: 3em;
+}
+
+#pagehead img {
+    float: left;
+    margin-top: 0.3em;
+    margin-right: 1em;
+}
+
+#pagehead h1 {
+    display: inline;
+    text-transform: lowercase;
+}
+
+#masthead {
+    padding-top: 2em;
+}
+
+#masthead h1 {
+    font-size: 6em;
+    text-transform: lowercase;
+    line-height: 90%;
+}
+
+#masthead h2 {
+    font-size: 3em;
+    text-transform: lowercase;
+    line-height: 90%;
+}
+
+@media only screen and (max-width: 1000px) {
+    #masthead h1 {
+        font-size: 5.5em;
+    }
+}
+
+@media only screen and (max-width: 980px) {
+    #masthead h1 {
+        font-size: 4.5em;
+    }
+    #masthead h2 {
+        font-size: 2.5em;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #masthead {
+        padding-top: 2em;
+    }
+    #masthead h1 {
+        font-size: 4.5em;
+    }
+    #pagehead img {
+        margin-top: -0.2em;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #masthead {
+        padding-top: 2em;
+    }
+    #masthead h1 {
+        font-size: 2.5em;
+    }
+    #masthead h2 {
+        font-size: 1.5em;
+    }
+}
+
+@media only screen and (min-width: 767px) {
+    .button.full-width {
+        display: block;
+    }
+}
+
+#masthead .panel {
+    margin-top: 2em;
+}
+
+#site-header {
+    width: 100%;
+    font-size: 12pt;
+    font-family: 'Cabin',"Helvetica Neue", "Helvetica", Arial, Verdana, sans-serif;
+}
+
+#nav-bar-slim {
+    display: none;
+    background-color: black;
+    border-bottom: 1px solid #333;
+}
+
+#nav-bar-fat {
+    background-color: black;
+    display: block;
+}
+
+@media only screen and (max-width:767px) {
+    #nav-bar-slim {
+        display: block;
+    }
+    #nav-bar-fat {
+        display: none;
+    }
+}
+
+#nav-bar-fat .nav-bar {
+    background-color: transparent;
+    border: none;
+    margin-top: 0px;
+    -webkit-margin-before: 0px;
+}
+#nav-bar-fat .nav-bar ol, ul {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+#nav-bar-fat .nav-bar li {
+    border: none;
+    padding-right: 3.5em;
+}
+
+#site-header #search {
+    float: right;
+    padding-right: 0px;
+}
+#site-header form {
+    display: inline;
+    text-align: right;
+    margin: 0px;
+}
+#site-header input {
+    width: 200px;
+}
+@media only screen and (max-width: 870px) {
+    #site-header input {
+        width: 110px;
+    }
+}
+@media only screen and (max-width: 767px) {
+    #nav-bar-fat {
+        padding-top:1em;
+        padding-bottom:1em;
+    }
+    #site-header #search {
+        float: left;
+    }
+    #site-header input {
+        width: 220px;
+    }
+}
+#site-footer {
+    background-color: black;
+    color: white;
+    margin-top: 8em;
+    padding-top: 2.5em;
+    padding-bottom: 1.5em;
+}
+
+#site-footer h6 {
+    color: white;
+    border-bottom: 1px solid #333;
+    margin-bottom: 0.8em;
+}
+
+#site-header a, #site-footer a {
+    color: #ffe85b;
+//    color: #ccc;
+}
+#site-header a:hover, #site-footer a:hover {
+    color: #00a651;
+//    color: #ffe85b;
+}
+#site-header a:active, #site-footer a:active {
+    color: #3773a5;
+}
+
+.nav-bar-toggle {
+    font-size: 8pt;
+}
+
+#site-footer input[type=text], #site-footer input[type=email], #site-footer textarea {
+    background-color: #111;
+    color: white;
+    border-color: #333;
+}
+
+#copyright {
+    padding-top: 2em;
+}
+
+#twitter-widget h3 {
+    visibility: hidden;
+}
+
+article {
+    margin-bottom:1em;
+}
+
+article audio {
+    width: 100%;
+}
+
+article .social-links li {
+    display: inline-block;
+    vertical-align: top;
+}
+
+#listen {
+    margin-top: 3em;
+}
+
+#read {
+    margin-top: 3em;
+}
+
+#sidebar section {
+    margin-bottom: 2em;
+}
+
+#about-hosts {
+    margin-top: 2em;
+}
+#about-hosts h3 {
+    margin-bottom: 1em;
+}
+
+#about-hosts section {
+    clear: both;
+    margin-bottom: 3em;
+}
+
+#about-hosts section.left img {
+    float: left;
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
+
+#about-hosts section.right img {
+    float: right;
+    margin-left: 1em;
+    margin-bottom: 1em;
+}
+/* -----------------------------------------
+   Page Name 1
+----------------------------------------- */
+
+
+
+
+/* -----------------------------------------
+   Page Name 2
+----------------------------------------- */
+
+
