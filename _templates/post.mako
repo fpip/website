@@ -15,6 +15,33 @@
 
     </p>
 
+    <ul class="social-links">
+        % if bf.config.blog.twitter.enabled:
+        <li><a href="https://twitter.com/share"
+            class="twitter-share-button"
+            data-url="${post.permalink}">Tweet</a></li>
+        % endif
+        % if bf.config.blog.googleplus.enabled:
+        <li><div class="g-plusone" data-size="medium"
+            data-href="${post.permalink}"></div></li>
+        % endif
+        % if bf.config.blog.facebook.enabled:
+        <li><div class="fb-like"
+            data-href="${post.permalink}"
+            data-send="false" data-layout="button_count"
+            data-width="100" data-show-faces="false"
+            style="vertical-align:top;"></div></li>
+        % endif
+        % if bf.config.blog.pinterest.enabled:
+        <li><a
+            href="http://pinterest.com/pin/create/button/?url=${post.permalink|u}"
+            class="pin-it-button"
+            count-layout="horizontal"><img border="0"
+            src="//assets.pinterest.com/images/PinExt.png"
+            title="Pin It" /></a></li>
+        % endif
+    </ul>
+
     ${post.content}
 
     % if post.mp3_file or post.ogg_file:
