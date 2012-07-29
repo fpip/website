@@ -114,7 +114,7 @@
                                 % endfor
                             </ul>
                             % if len(shows) > len(recent_shows) + 1:
-                            <p><a href="#">More Episodes</a></p>
+                            <p><a href="/shows">More Episodes</a></p>
                             % endif
                         </div>
                         % endif
@@ -220,7 +220,7 @@
                                 % endfor
                             </ul>
                             % if len(posts) > len(recent_posts) + 1:
-                            <p><a href="#">More posts</a></p>
+                            <p><a href="/blog">More Posts</a></p>
                             % endif
                         </div>
                         % endif
