@@ -1,5 +1,5 @@
 ---
-categories: Shows
+categories: Announcements
 author: Mike Crute
 date: 2010/06/10 00:00:00
 title: New Episode Coming 6/15
