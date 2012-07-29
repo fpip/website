@@ -261,9 +261,19 @@ article audio {
     width: 100%;
 }
 
+ul.social-links {
+    list-style-type: none;
+    margin-left: 0px;
+}
+
 article .social-links li {
     display: inline-block;
     vertical-align: top;
+}
+
+article ul {
+    list-style-type: circle;
+    margin-left: 3em;
 }
 
 #listen {
