@@ -101,9 +101,12 @@
     Guitarist.
 </p>
 <p>
-    You can usually find Benjamin galavanting around IRC channels and various
-    IM’s as benjaminws, benjaminwarfield, or reverendbws, or at
-    <a href="http://just-another.net">http://just-another.net</a>.
+  Ben once nearly automated himself out of a job. He is at home
+designing, automating, and scaling infrastructure, but has also been known to
+participate in code reviews and pair programming with developers.
 </p>
+
+<p>
+You can find him over at <a href="http://benjaminwarfield.com">http://benjaminwarfield.com</a>.
 </section>
 </section>
