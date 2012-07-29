@@ -309,9 +309,13 @@ $(document).ready(function() {
         var $form = $(this);
         var url = $form.attr('action');
         var jqxhr = $.post(url, $form.serialize())
-        .success(function(data) { alert("Got it, thanks!"); $form.reset(); console.info(data); })
-        .error(function(data) { alert("Woops, something broke; yell at @mcrute, okay?"); console.error(data); })
-        .complete(function() { });
+            .success(function(data) {
+                $("#contact")[0].reset();
+                alert("Got it, thanks!");
+                console.info(data);
+            })
+            .error(function(data) { alert("Woops, something broke; yell at @mcrute, okay?"); console.error(data); })
+            .complete(function() { });
     });
 });
 
