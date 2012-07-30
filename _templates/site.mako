@@ -27,6 +27,10 @@
 	<!--[if lt IE 9]>
 		<link rel="stylesheet" href="/static/css/ie.css">
 	<![endif]-->
+
+    <link rel="apple-touch-icon" href="/static/images/fpip/4-up-square-57.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/static/images/fpip/4-up-square-72.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/static/images/fpip/4-up-square-114.png" />
 	
 	<script src="/static/js/modernizr.foundation.js"></script>
 
