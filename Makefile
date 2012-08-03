@@ -1,4 +1,5 @@
 site:
+	ln -s /home/fpip/downloads.txt /home/fpip/repos/fpip_website.git/downloads.txt
 	blogofile build
 
 deploy: site
