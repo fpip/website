@@ -22,7 +22,7 @@
         </div>
 
         <div class="four columns offset-by-one">
-            <%include file="sidebar.mako" args="top_shows=top_shows, recent_shows=recent_shows, recent_posts=recent_posts, featured_posts=featured_posts" />
+            <%include file="sidebar.mako" args="top_shows=top_shows, sidebar_recent_shows=sidebar_recent_shows, sidebar_recent_posts=sidebar_recent_posts, featured_posts=featured_posts" />
         </div>
     </div>
 </div>

@@ -12,8 +12,8 @@ def write_home_page():
     path = bf.util.path_join(blog.path, "index.html")
     blog.logger.info(u"Writing custom homepage of awesomeness: " + path)
 
-    recent_shows = podcastutils.get_recent_shows()
-    recent_posts = podcastutils.get_recent_posts()
+    recent_shows = podcastutils.get_recent_shows(include_latest=False)
+    recent_posts = podcastutils.get_recent_posts(include_latest=False)
 
     try:
         top_shows = podcastutils.get_top_shows(bf.config.blog.homepage.top_shows)

@@ -3,15 +3,19 @@ blog = bf.config.controllers.blog
 global_tvars = bf.config.site.template_vars
 
 
-def get_recent_shows():
-    recent_shows = blog.shows[1:bf.config.blog.homepage.recent_shows+1]
-    global_tvars['recent_shows'] = recent_shows
+def get_recent_shows(include_latest=True):
+    start = 0 if include_latest else 1
+    recent_shows = blog.shows[start:bf.config.blog.homepage.recent_shows+start]
+    if include_latest:
+        global_tvars['sidebar_recent_shows'] = recent_shows
     return recent_shows
 
 
-def get_recent_posts():
-    recent_posts = blog.posts_minus_shows[1:bf.config.blog.homepage.recent_posts+1]
-    global_tvars['recent_posts'] = recent_posts
+def get_recent_posts(include_latest=True):
+    start = 0 if include_latest else 1
+    recent_posts = blog.posts_minus_shows[start:bf.config.blog.homepage.recent_posts+start]
+    if include_latest:
+        global_tvars['sidebar_recent_posts'] = recent_posts
     return recent_posts
 
 

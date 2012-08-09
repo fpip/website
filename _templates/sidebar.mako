@@ -1,4 +1,4 @@
-<%page args="top_shows,recent_shows,recent_posts,featured_posts" />
+<%page args="top_shows,sidebar_recent_shows,sidebar_recent_posts,featured_posts" />
 
 <div id="sidebar">
 
@@ -14,7 +14,7 @@
 <section>
 <h4>Recent Episodes</h4>
 <ul>
-    % for post in recent_shows:
+    % for post in sidebar_recent_shows:
     <li><a href="${post.permapath()}">${post.title}</a></li>
     % endfor
 </ul>
@@ -24,7 +24,7 @@
 <section>
 <h4>Recent Posts</h4>
 <ul>
-    % for post in recent_posts:
+    % for post in sidebar_recent_posts:
     <li><a href="${post.permapath()}">${post.title}</a></li>
     % endfor
 </ul>
