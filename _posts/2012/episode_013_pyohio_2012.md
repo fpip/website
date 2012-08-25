@@ -9,3 +9,6 @@ title: "Episode 012: PyOhio 2012"
 draft: true
 ---
 Someone should write some excellent show notes here.
+
+ [PyOhio]: http://pyohio.org
+ [Eric's slides]: http://bit.ly/ospw-talk
