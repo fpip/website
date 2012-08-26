@@ -23,7 +23,14 @@ This episode, recorded at [PyOhio 2012][PyOhio], features an interview with [Cat
 * Ok. I Lied. PyOhio wants to get into teaching the youth and other folks new to Python, "Day Of Python" events. 
 * People come from all over the country to PyOhio. It is at destination, nay, a PILGRIMAGE. 
 * PyOhio has just become a Non-Profit Organization in the State of Ohio. Federal 501.3(c) coming soon. 
-* 
+* There is a lot of useful info about how to become a non-profit detailed in the show, but show notes cannot do it justice. You must listen. Really. 
+* [FreeGeek][fg] and [Ohio Linuxfest][olf] folks were very helpful. Word to your mothers, gentlemen. 
+* Growth is the primary challenge. Growing pains require more help, more volunteers, and more publicity. Must not preach to the same choir. 
+* The future, it is bright. [Shades are required.][shades] 
+* It would be awesome for Ohio to be a Python talent hotbed. Stop the brain-drain to the coasts. 
+* PYOHIO WILL BE THE WOODSTOCK OF PYTHON. With less drugs. Cause, you know. That's just wrong. And stuff. 
+* The campaign to get PyCon to Ohio had becone. Plans within plans. Oh yes. Plans within plans. 
+* [Eric spoke][Eric's slides] on processing a million images to find "interesting things" in the night sky.
 
  [PyOhio]: http://pyohio.org
  [Eric's slides]: http://bit.ly/ospw-talk
@@ -32,4 +39,8 @@ This episode, recorded at [PyOhio 2012][PyOhio], features an interview with [Cat
  [bc]: http://www.linkedin.com/in/briancostlow
  [columbus]: https://maps.google.com/maps?q=columbus+ohio&ie=UTF-8&hq=&hnear=0x883889c1b990de71:0xe43266f8cfb1b533,Columbus,+OH&gl=us&ei=M6s6UPKGJoHH6wHZ44DwBA&ved=0CLcBELYD
  [pyvideo]: http://pyvideo.org/
+ [fg]: http://freegeekcolumbus.org/
+ [olf]: http://ohiolinux.org/
+ [shades]: http://www.youtube.com/watch?v=8qrriKcwvlY
+ 
  
