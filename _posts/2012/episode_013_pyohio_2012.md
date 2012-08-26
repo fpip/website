@@ -8,7 +8,7 @@ duration: "36:05"
 title: "Episode 012: PyOhio 2012"
 draft: true
 ---
-This episode, recorded at [PyOhio 2012][PyOhio], features an interview with [Catherine Devlin][cd], [Eric Floehr][ef], and [Brian Costlow][bc] about the histry and developmewnt of the regional conference. Notes follow:
+This episode, recorded at [PyOhio 2012][PyOhio], features an interview with [Catherine Devlin][cd], [Eric Floehr][ef], and [Brian Costlow][bc] about the history and development of the regional conference. Notes follow:
 
 * Introductions all around. Gladhanding. Bona fides. Poledancing (Not). 
 * The history of PyOhio: 'This one time, at PyCon..."
@@ -30,7 +30,8 @@ This episode, recorded at [PyOhio 2012][PyOhio], features an interview with [Cat
 * It would be awesome for Ohio to be a Python talent hotbed. Stop the brain-drain to the coasts. 
 * PYOHIO WILL BE THE WOODSTOCK OF PYTHON. With less drugs. Cause, you know. That's just wrong. And stuff. 
 * The campaign to get PyCon to Ohio had becone. Plans within plans. Oh yes. Plans within plans. 
-* [Eric spoke][Eric's slides] on processing a million images to find "interesting things" in the night sky.
+* [Eric spoke][Eric's slides] on processing a million images to find "interesting things" in the night sky. Wound up finding fascinating data about the path of the year, the tracks of the planets in the sky, and how the length of the day changes throughout the year. 
+
 
  [PyOhio]: http://pyohio.org
  [Eric's slides]: http://bit.ly/ospw-talk
