@@ -9,6 +9,8 @@ blog.name = "From Python Import Podcast"
 blog.description = "an irregular podcast for irreverent pythonistas"
 blog.timezone = "US/Eastern"
 
+blog.post_default_filters['md'] = blog.post_default_filters['markdown']
+
 blog.podcast.root = "/shows"
 blog.podcast.summary = "From Python Import Podcast is a podcast about Python"
 blog.podcast.subtitle = "an irregular podcast for irreverent pythonistas"
