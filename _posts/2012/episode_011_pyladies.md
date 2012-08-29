@@ -5,7 +5,7 @@ date: 2012/06/01 00:00:00
 mp3_file: shows/FPIP011.mp3
 ogg_file: shows/FPIP011.ogg
 duration: "25:26"
-title: Episode 011 - PyLadies
+title: "Episode 011: PyLadies"
 ---
 In this episode we interview [Christine Cheung](http://www.xtine.net/) and
 [Sandy Strong](https://twitter.com/#!/sandymahalo) of [PyLadies](http://pyladies.com/)

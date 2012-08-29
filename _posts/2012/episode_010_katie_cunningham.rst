@@ -5,10 +5,10 @@ date: 2012/05/06 00:00:00
 mp3_file: shows/FPIP010.mp3
 ogg_file: shows/FPIP010.ogg
 duration: "42:29"
-title: Episode 010 - Katie Cunningham
+title: "Episode 010: Katie Cunningham"
 ---
 What can we say about Katie? We met her at PyCon 2012 and, frankly, we were
-smitten. She's a woman of many talents...
+starstruck. She's a woman of many talents...
 
 * `She codes! <http://therealkatie.net/projects/>`_
 * `She does things to the Internet! <http://therealkatie.net/about/>`_
