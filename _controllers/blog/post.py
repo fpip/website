@@ -172,7 +172,7 @@ class Post(object):
                     datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
 
         if not self.slug:
-            self.slug = re.sub("[ ?]", "-", self.title).lower()
+            self.slug = slugify(self.title)
 
         if not self.date:
             self.date = datetime.datetime.now(pytz.timezone(self.__timezone))
@@ -196,10 +196,8 @@ class Post(object):
             self.permalink = \
                     re.sub(":title", self.slug, self.permalink)
 
-            # TODO: slugification should be abstracted out somewhere reusable
-            self.permalink = re.sub(
-                    ":filename", re.sub(
-                            "[ ?]", "-", self.filename).lower(), self.permalink)
+            self.permalink = re.sub(":filename",
+                    slugify(self.filename), self.permalink)
 
             # Generate sha hash based on title
             self.permalink = re.sub(":uuid", hashlib.sha1(
@@ -310,9 +308,8 @@ class Category(object):
 
     def __init__(self, name):
         self.name = unicode(name)
-        # TODO: slugification should be abstracted out somewhere reusable
         # TODO: consider making url_name and path read-only properties?
-        self.url_name = self.name.lower().replace(" ", "-")
+        self.url_name = slugify(self.name)
         self.path = bf.util.site_path_helper(
                 bf.config.controllers.blog.path,
                 bf.config.controllers.blog.category_dir,
@@ -368,3 +365,10 @@ def parse_posts(directory):
             posts.append(p)
     posts.sort(key=operator.attrgetter('date'), reverse=True)
     return posts
+
+
+def slugify(raw):
+    slug = re.sub("\W", "-", raw).lower()
+    slug = re.sub("-+", "-", slug)
+    slug = slug.strip("-")
+    return slug
