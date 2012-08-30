@@ -5,7 +5,7 @@ date: 2012/07/04 16:22:00
 mp3_file: shows/FPIP012.mp3
 ogg_file: shows/FPIP012.ogg
 duration: "22:10"
-title: Episode 012 - Jonathan LaCour
+title: "Episode 012: Jonathan LaCour"
 ---
 In this episode, we interview
 [Jonathan LaCour](https://en.twitter.com/#!/cleverdevil),

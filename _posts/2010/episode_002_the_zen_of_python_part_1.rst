@@ -5,7 +5,7 @@ date: 2010/05/01 00:00:00
 mp3_file: shows/FPIP002.mp3
 ogg_file: shows/FPIP002.ogg
 duration: "1:00:00"
-title: Epsiode 002 - The Zen of Python, part 1
+title: "Episode 002: The Zen of Python, part 1"
 ---
 This is the first of two episodes where we’re going to explore PEP 20, that is,
 The Zen of Python.

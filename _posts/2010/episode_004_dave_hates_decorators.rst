@@ -5,7 +5,7 @@ date: 2010/06/15 00:00:00
 mp3_file: shows/FPIP004.mp3
 ogg_file: shows/FPIP004.ogg
 duration: "47:04"
-title: Episode 004 - Dave Hates Decorators / Where Code Goes to Die
+title: "Episode 004: Dave Hates Decorators / Where Code Goes to Die"
 ---
 In this episode of From Python Import Podcast:
 
