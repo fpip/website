@@ -40,7 +40,7 @@ Some linkable things we discussed include:
 [requests]: http://docs.python-requests.org/
 [pg]: http://docs.python-guide.org/
 [tablib]: http://docs.python-tablib.org/
-[cw]: http://lkd.to/chadwhitaker
+[cw]: http://whit537.org
 [gittip]: https://www.gittip.com/
 [gheat]: http://code.google.com/p/gheat/
 [hab]: https://habitualist.com/
