@@ -11,7 +11,7 @@ In the latest exciting episode of From Python Import Podcast, we had the
 pleasure of sitting down with
 [James Tauber][jt] ([Pinax][pinax], [Eldarion][eldarion]),
 [Kenneth Reitz][kr] ([Requests][requests], [The Hitchhiker's Guide to Python][pg], [Tablib][tablib]),
-and [Chad Whitaker][cw] ([Gittip][gittip], [Aspen][aspen])
+and [Chad Whitacre][cw] ([Gittip][gittip], [Aspen][aspen])
 for an end-of-conference chat at [PyOhio][pyohio] 2012.
 
 We could try to summarize the conversation here, but it frankly wouldn't
