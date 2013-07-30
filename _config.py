@@ -35,6 +35,7 @@ blog.googleplus.enabled = True
 blog.pinterest.enabled = True
 blog.twitter.enabled = True
 blog.twitter.widget = True
+blog.twitter.widget_id = "362060480841404416"
 blog.twitter.user = "__fpip__"
 blog.twitter.related = "codeshaman,mpirnat,dstanek,mcrute,benjaminws"
 

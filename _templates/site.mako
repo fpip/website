@@ -209,9 +209,6 @@
 	<script src="/static/js/foundation.js"></script>
 	<script src="/static/js/app.js"></script>
 
-% if bf.config.blog.twitter.widget:
-<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
-% endif
 % if bf.config.blog.pinterest.enabled:
 <script type="text/javascript" src="//assets.pinterest.com/js/pinit.js"></script>
 % endif
@@ -221,39 +218,6 @@
 $(function() {
     $('input, textarea').placeholder();
 });
-
-% if bf.config.blog.twitter.widget:
-// Twitter widget
-twitter_widget = function() {
-new TWTR.Widget({
-  id: 'twitter-widget',
-  version: 2,
-  type: 'profile',
-  interval: 30000,
-  title: '',
-  subject: '',
-  width: 'auto',
-  height: 300,
-  theme: {
-    shell: {
-      background: 'black',
-      color: '#ffffff'
-    },
-    tweets: {
-      background: '#ffffff',
-      color: '#444444',
-      links: '#3773a5'
-    }
-  },
-  features: {
-    scrollbar: false,
-    loop: true,
-    live: true,
-    behavior: 'all'
-  }
-  }).render().setUser('${bf.config.blog.twitter.user}').start();
-}
-% endif
 
 % if bf.config.blog.twitter.enabled:
 // twitter buttons
@@ -300,11 +264,6 @@ $(document).ready(function() {
         $('a.nav-bar-toggle').toggle();
         return false;
     });
-
-    // twitter widget
-    if($("#twitter-widget")) {
-        twitter_widget();
-    }
 
     // contact form handler
     $("#contact").submit(function(event) {

@@ -45,7 +45,13 @@
 % if bf.config.blog.twitter.widget:
 <section>
 <h4>Twitter</h4>
-<div id="twitter-widget"></div>
+<a class="twitter-timeline"
+    height="600"
+    data-dnt="true"
+    data-link-color="#3773a5"
+    href="https://twitter.com/${bf.config.blog.twitter.user}"
+    data-widget-id="${bf.config.blog.twitter.widget_id}">Tweets by @${bf.config.blog.twitter.user}</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 </section>
 % endif
 
