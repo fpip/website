@@ -2,8 +2,8 @@
 categories: Shows
 author: Mike Pirnat
 date: 2011/03/17 00:00:00
-mp3_file: shows/FPIP008.mp3
-ogg_file: shows/FPIP008.ogg
+mp3_file: FPIP008.mp3
+ogg_file: FPIP008.ogg
 duration: "1:46:30"
 title: "Episode 008: PyCon/CodeMash Double Feature (Doctor X will Code a Feature)"
 ---

@@ -2,8 +2,8 @@
 categories: Shows
 author: Mike Pirnat
 date: 2012/07/04 16:22:00
-mp3_file: shows/FPIP012.mp3
-ogg_file: shows/FPIP012.ogg
+mp3_file: FPIP012.mp3
+ogg_file: FPIP012.ogg
 duration: "22:10"
 title: "Episode 012: Jonathan LaCour"
 ---

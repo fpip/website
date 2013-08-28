@@ -58,19 +58,19 @@
                             <p>
                                 <a href="${latest_show.permapath()}">Show Notes</a>
                                 % if latest_show.mp3_file:
-                                    | <a href="${bf.config.site.url}/${latest_show.mp3_file}">Download MP3</a>
+                                    | <a href="${bf.config.site.cdn_url}/${latest_show.mp3_file}">Download MP3</a>
                                 % endif
                                 % if latest_show.ogg_file:
-                                    | <a href="${bf.config.site.url}/${latest_show.ogg_file}">Download OGG</a>
+                                    | <a href="${bf.config.site.cdn_url}/${latest_show.ogg_file}">Download OGG</a>
                                 % endif
                             </p>
                         </nav>
                         <p><audio controls preload="metadata">
                         % if latest_show.mp3_file:
-                            <source type="audio/mpeg" src="${bf.config.site.url}/${latest_show.mp3_file}" />
+                            <source type="audio/mpeg" src="${bf.config.site.cdn_url}/${latest_show.mp3_file}" />
                         % endif
                         % if latest_show.ogg_file:
-                            <source type="audio/ogg" src="${bf.config.site.url}/${latest_show.ogg_file}" />
+                            <source type="audio/ogg" src="${bf.config.site.cdn_url}/${latest_show.ogg_file}" />
                         % endif
                         </audio></p>
                         <ul class="social-links">

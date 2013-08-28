@@ -2,8 +2,8 @@
 categories: Shows
 author: Mike Crute
 date: 2012/03/20 00:00:00
-mp3_file: shows/FPIP009.mp3
-ogg_file: shows/FPIP009.ogg
+mp3_file: FPIP009.mp3
+ogg_file: FPIP009.ogg
 duration: "47:45"
 title: "Episode 009: Is this thing still on?"
 ---

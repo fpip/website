@@ -47,22 +47,22 @@
     % if post.mp3_file or post.ogg_file:
     <p><audio controls preload="metadata">
         % if post.mp3_file:
-            <source type="audio/mpeg" src="${bf.config.site.url}/${post.mp3_file}" />
+            <source type="audio/mpeg" src="${bf.config.site.cdn_url}/${post.mp3_file}" />
         % endif
         % if post.ogg_file:
-            <source type="audio/ogg" src="${bf.config.site.url}/${post.ogg_file}" />
+            <source type="audio/ogg" src="${bf.config.site.cdn_url}/${post.ogg_file}" />
         % endif
     </audio></p>
 
     <p>
         % if post.mp3_file:
-            <a href="${bf.config.site.url}/${post.mp3_file}">Download MP3</a>
+            <a href="${bf.config.site.cdn_url}/${post.mp3_file}">Download MP3</a>
         % endif
         % if post.mp3_file and post.ogg_file:
             |
         % endif
         % if post.ogg_file:
-            <a href="${bf.config.site.url}/${post.ogg_file}">Download OGG</a>
+            <a href="${bf.config.site.cdn_url}/${post.ogg_file}">Download OGG</a>
         % endif
     </p>
     % endif
