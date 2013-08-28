@@ -9,15 +9,12 @@ version:
 	echo `date` >> version.txt
 
 site: version
-	@ if [ ! -e /home/fpip/repos/fpip_website.git/downloads.txt ]; then \
-		ln -s /home/fpip/downloads.txt /home/fpip/repos/fpip_website.git/downloads.txt; \
+	@ if [ ! -e /home/fpip/src/website/website.git/downloads.txt ]; then \
+		ln -s /home/fpip/downloads.txt /home/fpip/src/website/website.git/downloads.txt; \
 	fi; done
 	blogofile build
 
 deploy: site
-	rsync -auvz --filter="exclude, Makefile" _site/ /srv/www/frompythonimportpodcast.com/www/htdocs/
-	@ if [ ! -e /srv/www/frompythonimportpodcast.com/www/htdocs/shows ]; then \
-		ln -s /srv/www/frompythonimportpodcast.com/www/shows /srv/www/frompythonimportpodcast.com/www/htdocs/shows; \
-	fi; done
+	rsync -auvz --filter="exclude, Makefile" _site/ /home/fpip/www/
 
 autopublish: update deploy
