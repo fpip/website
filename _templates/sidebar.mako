@@ -55,4 +55,6 @@
 </section>
 % endif
 
+<%include file="rackspace.mako" />
+
 </div>

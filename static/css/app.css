@@ -288,6 +288,18 @@ article ul {
     margin-bottom: 2em;
 }
 
+#hosting {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 0.75em;
+    overflow: hidden;
+    max-width: 300px;
+}
+
+#hosting img {
+    width: 100%;
+}
+
 #about-hosts {
     margin-top: 2em;
 }
