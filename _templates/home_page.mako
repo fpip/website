@@ -156,6 +156,7 @@
                             class="nice white large radius full-width button">Subscribe to OGGs</a></li>
                         % endif
                     </ul>
+                    <%include file="rackspace.mako" />
                 </div>
             </div>
         </div>
