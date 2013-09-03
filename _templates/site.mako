@@ -195,7 +195,8 @@
                 <div class="four columns">
                     <p>Powered by
                         <a href="http://www.blogofile.com">Blogofile</a> and
-                        <a href="http://foundation.zurb.com/">Foundation</a>
+                        <a href="http://foundation.zurb.com/">Foundation</a><br>
+                        Generously hosted by <a href="http://rackspace.com">Rackspace</a>
                     </p>
                 </div>
             </div>
