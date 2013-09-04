@@ -55,6 +55,8 @@
 </section>
 % endif
 
+<%include file="pycon2014.mako" />
+<%include file="gittip.mako" />
 <%include file="rackspace.mako" />
 
 </div>
