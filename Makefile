@@ -6,6 +6,7 @@ update:
 
 version:
 	echo `git rev-parse HEAD` > version.txt
+	echo `git rev-parse --abbrev-ref HEAD` >> version.txt
 	echo `date` >> version.txt
 
 site: version
