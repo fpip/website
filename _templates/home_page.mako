@@ -266,11 +266,11 @@
             <div class="row">
 
                 <div class="four columns">
-                    <%include file="rackspace.mako" />
+                    <%include file="pycon2014.mako" />
                 </div>
 
                 <div class="four columns">
-                    <%include file="rackspace.mako" />
+                    <%include file="gittip.mako" />
                 </div>
 
                 <div class="four columns">
