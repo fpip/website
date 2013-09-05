@@ -3,7 +3,7 @@ categories: Shows
 author: Chris Miller
 date: 2010/05/01 00:00:00
 mp3_file: FPIP002.mp3
-ogg_file: FPIP002.ogg
+ogg_file: FPIP002.oga
 duration: "1:00:00"
 title: "Episode 002: The Zen of Python, part 1"
 ---

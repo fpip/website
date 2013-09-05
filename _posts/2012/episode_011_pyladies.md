@@ -3,7 +3,7 @@ categories: Shows
 author: Mike Pirnat
 date: 2012/06/01 00:00:00
 mp3_file: FPIP011.mp3
-ogg_file: FPIP011.ogg
+ogg_file: FPIP011.oga
 duration: "25:26"
 title: "Episode 011: PyLadies"
 ---

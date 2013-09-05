@@ -3,7 +3,7 @@ categories: Shows
 author: Mike Crute
 date: 2012/05/06 00:00:00
 mp3_file: FPIP010.mp3
-ogg_file: FPIP010.ogg
+ogg_file: FPIP010.oga
 duration: "42:29"
 title: "Episode 010: Katie Cunningham"
 ---
