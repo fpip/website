@@ -278,7 +278,13 @@ $(document).ready(function() {
                 alert("Got it, thanks!");
                 console.info(data);
             })
-            .error(function(data) { alert("Woops, something broke; yell at @mcrute, okay?"); console.error(data); })
+            .error(function(data) {
+                if(data.status == 403) {
+                    alert("We're still fine-tuning our spam filter. If your message was legit, please tell @__fpip__ about it via Twitter.");
+                } else {
+                    alert("Woops, something broke! Yell at @__fpip__ on Twitter, okay?"); console.error(data);
+                }
+            })
             .complete(function() { });
     });
 });
