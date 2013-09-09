@@ -136,7 +136,7 @@ of the CDN as a "X-Object-Meta-Content-Type" which is totally not useful.  I
 briefly tried renaming files from .ogg to .oga in both Cyberduck and the web
 interface in the hopes that changing the extension would cause the MIME type to
 be re-detected; when that failed I was forced to reupload all of our ogg audio
-with .oga extensions.  This is probably the single crappiest aspect of my
+with .oga extensions.  This is probably the single worst annoyance of my
 overall Rackspace experience; but now I know, and [knowing is half the
 battle][halfthebattle].
 
