@@ -11,6 +11,8 @@ blog.description = "a small-batch artisanal podcast for irreverent pythonistas"
 blog.timezone = "US/Eastern"
 
 blog.post_default_filters['md'] = blog.post_default_filters['markdown']
+blog.post_excerpts.enabled = True
+blog.post_excerpts.word_length = 0  # explicit excerpts only, please
 
 blog.podcast.root = "/shows"
 blog.podcast.summary = "From Python Import Podcast is a podcast about Python"

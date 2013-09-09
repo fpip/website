@@ -53,7 +53,13 @@
                                 | <img src="/static/images/misc/explicit.png" alt="May contain explicit content">
                             %endif
                             </p>
-                            ${latest_show.content}
+                            % if latest_show.excerpt:
+                                ${latest_show.excerpt}
+                                <p><a href="${latest_show.permapath()}">Read more...</a></p>
+                            % else:
+                                ${latest_show.content}
+                            % endif
+
                         <nav>
                             <p>
                                 <a href="${latest_show.permapath()}">Show Notes</a>
@@ -179,7 +185,12 @@
                     <article>
                         <h4><a href="${latest_post.permapath()}">${latest_post.title}</a></h4>
                         <p>Published ${latest_post.date.strftime("%B %d, %Y")}</p>
-                        ${latest_post.content}
+                        % if latest_post.excerpt:
+                            ${latest_post.excerpt}
+                            <p><a href="${latest_post.permapath()}">Read more...</a></p>
+                        % else:
+                            ${latest_post.content}
+                        % endif
 
                         <ul class="social-links">
                             % if bf.config.blog.twitter.enabled:

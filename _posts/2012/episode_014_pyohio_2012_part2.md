@@ -7,6 +7,7 @@ ogg_file: FPIP014.oga
 duration: "1:22:17"
 title: "Episode 014: PyOhio 2012 Part 2"
 ---
+<div class="excerpt" markdown="1">
 In the latest exciting episode of From Python Import Podcast, we had the
 pleasure of sitting down with
 [James Tauber][jt] ([Pinax][pinax], [Eldarion][eldarion]),
@@ -18,6 +19,7 @@ We could try to summarize the conversation here, but it frankly wouldn't
 do it justice.  This is a great conversation between some bright guys, and
 it was a ton of fun to bring them all together. The links above will get
 you started, but you are best served to listen and simply enjoy.
+</div>
 
 Some linkable things we discussed include:
 

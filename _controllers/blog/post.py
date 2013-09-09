@@ -148,22 +148,38 @@ class Post(object):
     def __excerpt(self, num_words=50):
         #Default post excerpting function
         #Can be overridden in _config.py by
-        #defining post_excerpt(content,num_words)
+        #defining post_excerpt(content, num_words)
+
         if len(self.excerpt) == 0:
-             """Retrieve excerpt from article"""
-             s = BeautifulSoup.BeautifulSoup(self.content)
-             # get rid of javascript, noscript and css
-             [[tree.extract() for tree in s(elem)] for elem in (
-                     'script', 'noscript', 'style')]
-             # get rid of doctype
-             subtree = s.findAll(text=re.compile("DOCTYPE|xml"))
-             [tree.extract() for tree in subtree]
-             # remove headers
-             [[tree.extract() for tree in s(elem)] for elem in (
-                     'h1', 'h2', 'h3', 'h4', 'h5', 'h6')]
-             text = ''.join(s.findAll(text=True))\
-                                 .replace("\n", "").split(" ")
-             return " ".join(text[:num_words]) + '...'
+            """Retrieve excerpt from article"""
+
+            # TODO: need to relocate this into post-rendering time :-(
+            # Look for an explicit excerpt section in the post
+            s = BeautifulSoup.BeautifulSoup(self.content)
+            excerpt = s.find('div', {'class': 'excerpt'})
+            if excerpt:
+                return unicode(excerpt)
+
+            # Maybe we only want explicit excerpting?
+            if not num_words:
+                return None
+
+            # Didn't find one, let's do this the hard way...
+
+            # get rid of javascript, noscript and css
+            [[tree.extract() for tree in s(elem)] for elem in (
+                    'script', 'noscript', 'style')]
+
+            # get rid of doctype
+            subtree = s.findAll(text=re.compile("DOCTYPE|xml"))
+            [tree.extract() for tree in subtree]
+
+            # remove headers
+            [[tree.extract() for tree in s(elem)] for elem in (
+                    'h1', 'h2', 'h3', 'h4', 'h5', 'h6')]
+            text = ''.join(s.findAll(text=True))\
+                                .replace("\n", "").split(" ")
+            return " ".join(text[:num_words]) + '...'
 
     def __post_process(self):
         # fill in empty default value
