@@ -5,6 +5,7 @@ date: 2012/08/24 14:00:00
 mp3_file: FPIP013.mp3
 ogg_file: FPIP013.oga
 duration: "36:05"
+explicit: True
 title: "Episode 013: PyOhio 2012"
 ---
 This episode, recorded at [PyOhio 2012][PyOhio], features an interview with [Catherine Devlin][cd], [Eric Floehr][ef], and [Brian Costlow][bc] about the history and development of the regional conference. Notes follow:

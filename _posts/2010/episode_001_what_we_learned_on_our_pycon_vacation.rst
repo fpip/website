@@ -5,6 +5,7 @@ date: 2010/04/01 00:00:00
 mp3_file: FPIP001.mp3
 ogg_file: FPIP001.oga
 duration: "40:13"
+explicit: True
 title: "Episode 001: What We Learned on Our PyCon Vacation"
 ---
 Welcome to the first episode of the podcast! These, my friends, are the Show

@@ -5,6 +5,7 @@ date: 2012/05/06 00:00:00
 mp3_file: FPIP010.mp3
 ogg_file: FPIP010.oga
 duration: "42:29"
+explicit: True
 title: "Episode 010: Katie Cunningham"
 ---
 What can we say about Katie? We met her at PyCon 2012 and, frankly, we were

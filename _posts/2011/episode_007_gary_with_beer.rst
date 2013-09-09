@@ -5,6 +5,7 @@ date: 2011/01/12 00:00:00
 mp3_file: FPIP007.mp3
 ogg_file: FPIP007.oga
 duration: "57:30"
+explicit: True
 title: "Episode 007: Gary, With Beer"
 ---
 **...or “Make Your Own Episode Title, Since You’re So Clever; I’m Tired and

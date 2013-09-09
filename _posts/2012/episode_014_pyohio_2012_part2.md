@@ -5,6 +5,7 @@ date: 2012/09/25 10:05:00
 mp3_file: FPIP014.mp3
 ogg_file: FPIP014.oga
 duration: "1:22:17"
+explicit: True
 title: "Episode 014: PyOhio 2012 Part 2"
 ---
 <div class="excerpt" markdown="1">

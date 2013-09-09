@@ -5,6 +5,7 @@ date: 2011/03/17 00:00:00
 mp3_file: FPIP008.mp3
 ogg_file: FPIP008.oga
 duration: "1:46:30"
+explicit: True
 title: "Episode 008: PyCon/CodeMash Double Feature (Doctor X will Code a Feature)"
 ---
 What do you mean it’s not February any more? **Seriously?!** Sigh.  We know, we
