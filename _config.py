@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
-#site.url = "http://www.frompythonimportpodcast.com"
-site.url = "http://new.frompythonimportpodcast.com"
+site.url = "http://www.frompythonimportpodcast.com"
 site.cdn_url = "http://cdn.frompythonimportpodcast.com"
 
 blog = controllers.blog
