@@ -21,8 +21,8 @@ I'm very pleased to announce that we've now fully migrated over to the new
 setup, and so far things are pretty darn good.
 </div>
 
-Disclosure time--in exchange for getting the awesome hookup, we've been asked
-to:
+Full disclosure time--in exchange for getting the awesome hookup, we've been
+asked to:
 
  1. Link to Rackspace on the site (you'll see some bling in the sidebar and
     footer now)
@@ -224,7 +224,8 @@ pleasant enough to work with that I'll consider exploring it further.
 
 ##### Concluding Thoughts
 
-Overall, my Rackspace experience has been quite positive.
+Overall, my Rackspace experience has been quite positive, and I'd recommend
+checking them out to see if it's a good fit for what you want to do.
 
 There are some documentation issues that should be addressed--I know Rackspace
 prides itself on its "fanatical support", but a DIYer like myself doesn't want
