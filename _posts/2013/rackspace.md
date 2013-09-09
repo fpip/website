@@ -225,12 +225,15 @@ pleasant enough to work with that I'll consider exploring it further.
 ##### Concluding Thoughts
 
 Overall, my Rackspace experience has been quite positive, and I'd recommend
-checking them out to see if it's a good fit for what you want to do.
+checking them out to see if it's a good fit for what you want to do.  I'd like
+to sincerely thank Jesse and Rackspace for helping to breathe a little new life
+into the podcast by giving us a chance to play with their toys.
 
 There are some documentation issues that should be addressed--I know Rackspace
 prides itself on its "fanatical support", but a DIYer like myself doesn't want
 to have to contact support to sort out things that refreshed or improved
-documentation would make trivial.
+documentation would make trivial.  And I'd like to see just a little more
+control in the Cloud Files stuff.
 
 Now that we're all set up, I'm excited to be preparing some new episodes to be
 released this fall.  Stay tuned!
