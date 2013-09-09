@@ -60,7 +60,9 @@ reserved_field_names = {
     "source"     :"Reserved internally",
     "yaml"       :"Reserved internally",
     "content"    :"Reserved internally",
-    "filename"   :"Reserved internally"
+    "filename"   :"Reserved internally",
+    "explicit"   :"Does the post contain explicit content that should be "\
+        "flagged as such? ('true' or 'True' if so)"
     }
 
 
@@ -94,6 +96,7 @@ class Post(object):
         self.guid = None
         self.slug = None
         self.draft = False
+        self.explicit = False
         self.featured = False
         self.filters = None
         self.mp3_file = None

@@ -9,7 +9,7 @@
 <article>
     <h2 class="post-title"><a href="${post.permapath()}" rel="bookmark">${post.title}</a></h2>
     <p class="post-byline">Posted by ${post.author} on ${post.date.strftime("%B %d, %Y")}
-    % if bf.config.blog.podcast.explicit == "yes":
+    % if bf.config.blog.podcast.explicit == "yes" and post.explicit:
     | <img src="/static/images/misc/explicit.png" alt="May contain explicit content">
     %endif
 
