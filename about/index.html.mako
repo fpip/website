@@ -53,6 +53,24 @@
 </section>
 
 <section class="left">
+<h4>David Noyes</h4>
+<img src="http://www.gravatar.com/avatar/77b27775ca8ec4ffcb220bf7c2f7da4a?s=150" />
+<p>
+    Dave Noyes is more machine now than man; with his powerful cybernetic
+    limbs, he's capable of hurling automobiles over 300 meters, or of
+    gently petting an adorable puppy.  His laser eyes can superheat giant
+    balls of popcorn to house-bursting effect.  He likes long walks on the
+    beach and crushing his foes underfoot.
+</p>
+<p>
+    Dave also enjoys outsourcing his website biographies.
+</p>
+<p>
+    You can tweet him <a href="http://twitter.com/davenoyes">@davenoyes</a>... if you dare.
+</p>
+</section>
+
+<section class="left">
 <h4>Mike Pirnat</h4>
 <img src="http://www.gravatar.com/avatar/e259a5ddded3575e51f3af255621a9ba?s=150" />
 <p>
@@ -85,6 +103,7 @@ participate in code reviews and pair programming with developers.
 
 <p>
 You can find him over at <a href="http://benjaminwarfield.com">http://benjaminwarfield.com</a>.
+</p>
 </section>
 
 <section class="left">
