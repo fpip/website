@@ -5,12 +5,11 @@ author: Mike Pirnat
 date: 2013/10/31 00:00:00
 mp3_file: FPIP015.mp3
 ogg_file: FPIP015.oga
-duration: "1:40:17"
+duration: "1:50:13"
 explicit: True
 title: "Episode 015: An Evening with Jesse Noller"
 ---
 TODO: write episode notes
-TODO: confirm and set correct duration (see above)
 
 <div class="excerpt" markdown="1">
 Whatever you want to appear on the homepage should go here. Right here.
