@@ -15,44 +15,6 @@
 <h3>Your Friendly Neighborhood Hosts</h3>
 
 <section class="left">
-<h4>Mike Crute</h4>
-<img src="http://www.gravatar.com/avatar/fd0a728650bbe4d12fe76fa79c2ed4d9?s=150" />
-<p>
-    Mike grows two things: code and facial hair. He's the founder of
-    <a href="http://finiteloopsoftware.com">Finite Loop Software</a>, an
-    agile software consultancy based in Cleveland, Ohio.
-</p>
-<p>
-    Like David, he's one of the organizers of the
-    <a href="http://clepy.org">Cleveland Area Python Interest Group</a>.
-</p>
-<p>
-    Beyond that, there’s not much to say.
-    He occasionally blogs at
-    <a href="http://mike.crute.org/blog/">http://mike.crute.org/blog/</a>.
-</p>
-</section>
-
-<section class="left">
-<h4>Chris Miller</h4>
-<img src="http://www.gravatar.com/avatar/d312b176efd6acb7d581d6a14d53f270?s=150" />
-<p>
-    Chris stumbled online in 1987 and has not looked back since.  He was the
-    Co-Founder and Lead Architect of
-    <a href="http://www.podiobooks.com/">Podiobooks.com</a> from its creation
-    in 2005 to November of 2009.
-</p>
-<p>
-    When not writing code, he is one of the cohosts of
-    <a href="http://www.thesecretlair.com/">The Secret Lair</a> podcast.
-    In the past, he has also been a writer/publisher of role-playing games, a
-    BBS sysop, a barista, a maker of golf clubs, a medievalist, an editor, and
-    a Doctor Who fan. His blog can be found at
-    <a href="http://ctmiller.net">http://ctmiller.net</a>.
-</p>
-</section>
-
-<section class="left">
 <h4>David Noyes</h4>
 <img src="http://www.gravatar.com/avatar/77b27775ca8ec4ffcb220bf7c2f7da4a?s=150" />
 <p>
@@ -125,6 +87,47 @@ You can find him over at <a href="http://benjaminwarfield.com">http://benjaminwa
     When he’s not working he enjoys spending time with his beautiful wife and 3
     wonderful children. You can find his blog at
     <a href="http://traceback.org">http://traceback.org</a>.
+</p>
+</section>
+
+
+<h3>Hosts Emeritus</h3>
+
+<section class="left">
+<h4>Mike Crute</h4>
+<img src="http://www.gravatar.com/avatar/fd0a728650bbe4d12fe76fa79c2ed4d9?s=150" />
+<p>
+    Mike grows two things: code and facial hair. He's the founder of
+    <a href="http://finiteloopsoftware.com">Finite Loop Software</a>, an
+    agile software consultancy based in Cleveland, Ohio.
+</p>
+<p>
+    Like David, he's one of the organizers of the
+    <a href="http://clepy.org">Cleveland Area Python Interest Group</a>.
+</p>
+<p>
+    Beyond that, there’s not much to say.
+    He occasionally blogs at
+    <a href="http://mike.crute.org/blog/">http://mike.crute.org/blog/</a>.
+</p>
+</section>
+
+<section class="left">
+<h4>Chris Miller</h4>
+<img src="http://www.gravatar.com/avatar/d312b176efd6acb7d581d6a14d53f270?s=150" />
+<p>
+    Chris stumbled online in 1987 and has not looked back since.  He was the
+    Co-Founder and Lead Architect of
+    <a href="http://www.podiobooks.com/">Podiobooks.com</a> from its creation
+    in 2005 to November of 2009.
+</p>
+<p>
+    When not writing code, he is one of the cohosts of
+    <a href="http://www.thesecretlair.com/">The Secret Lair</a> podcast.
+    In the past, he has also been a writer/publisher of role-playing games, a
+    BBS sysop, a barista, a maker of golf clubs, a medievalist, an editor, and
+    a Doctor Who fan. His blog can be found at
+    <a href="http://ctmiller.net">http://ctmiller.net</a>.
 </p>
 </section>
 
