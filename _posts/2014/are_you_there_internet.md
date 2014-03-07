@@ -4,7 +4,7 @@ author: Mike Pirnat
 date: 2014/03/06 22:00:00
 title: "Are You There, Internet?"
 ---
-Are you there, Internet?  It's me, [@__fpip__][fpip].
+Are you there, Internet?  It's me, [@\_\_fpip\_\_][fpip].
 
 How are you?  Doing okay?  Made it through the holidays all right?  Surviving
 the onslaught of polar vortices?  Ready to be done with winter (or whatever
