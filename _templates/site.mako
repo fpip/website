@@ -16,7 +16,7 @@
     <title><%block name="title"/></title>
 
     <link rel="alternate" type="application/rss+xml" title="${bf.config.blog.name} RSS Feed" href="${bf.config.site.url}/feed">
-    <link rel="alternate" type="application/atom+xml" title="${bf.config.blog.name} Atom Feed" href="${bf.config.site.url}feed/atom">
+    <link rel="alternate" type="application/atom+xml" title="${bf.config.blog.name} Atom Feed" href="${bf.config.site.url}/feed/atom">
 
 	<!-- Included CSS Files -->
 	<link rel="stylesheet" href="/static/css/foundation.css">
