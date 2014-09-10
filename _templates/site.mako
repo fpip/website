@@ -151,7 +151,8 @@
                             <a href="${bf.config.blog.podcast.itunes_link}">iTunes</a> - find us in the iTunes store</li>
                         % endif
                         % if bf.config.blog.twitter.user:
-                        <li><img src="http://twitter.com/images/resources/twitter-bird-16x16.png" width="12" height="12">
+                            <li><img
+                            src="/static/images/misc/twitter-blue-16x16.png" width="12" height="12">
                             <a href="http://twitter.com/${bf.config.blog.twitter.user|u}">Twitter</a> -
                             follow us, say hi!</li>
                         % endif
