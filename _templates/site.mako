@@ -183,7 +183,7 @@
                 </div>
 
                 <div class="six columns">
-                    <p>Copyright &copy; 2010-2013 From Python Import Podcast;
+                    <p>Copyright &copy; 2010-2014 From Python Import Podcast;
                     licensed under a
                     <a rel="license"
                     href="http://creativecommons.org/licenses/by-nc-nd/3.0/">Creative
