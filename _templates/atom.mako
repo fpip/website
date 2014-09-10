@@ -13,7 +13,7 @@
   <link rel="alternate" type="text/html" href="${bf.config.blog.url}" />
   <id>${bf.config.blog.url}/feed/atom/</id>
   <link rel="self" type="application/atom+xml" href="${bf.config.blog.url}/feed/atom/" />
-% for post in posts[:20]:
+% for post in posts[:50]:
   <entry>
     <author>
       <name>${post.author}</name>

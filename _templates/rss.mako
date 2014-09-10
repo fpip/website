@@ -45,7 +45,7 @@
 </%def>
     ${podcast_categories()}
 % endif
-% for post in posts[:20]:
+% for post in posts[:50]:
     <item>
       <title>${post.title}</title>
       <link>${post.permalink}</link>
