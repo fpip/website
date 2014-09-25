@@ -66,7 +66,9 @@
                         <li><a href="/episodes">Episodes</a></li>
                         <li><a href="/blog">Blog</a></li>
                         <!--<li><a href="/goodies">Goodies</a></li>-->
+                        % if bf.config.blog.contactform.enabled:
                         <li><a href="#contact">Contact</a></li>
+                        % endif
                         <li id="search">
                     <form action="http://www.google.com/search" method="get">
                         <input type="search" name="q" placeholder="Search">
@@ -160,6 +162,7 @@
                 </div>
 
                 <div class="four columns">
+                % if bf.config.blog.contactform.enabled:
                     <a name="contact"></a>
                     <h6>Contact</h6>
                     <form id="contact" class="nice" action="/contact-handler/" method="POST">
@@ -170,6 +173,7 @@
                         <input type="hidden" name="mailer.form-key" value="fpip-contact">
                         <input type="hidden" name="mailer.fields.ignore" value="Send">
                     </form>
+                % endif
                 </div>
 
             </div>
@@ -267,6 +271,8 @@ $(document).ready(function() {
         return false;
     });
 
+
+    % if bf.config.blog.contactform.enabled:
     // contact form handler
     $("#contact").submit(function(event) {
         event.preventDefault();
@@ -288,6 +294,7 @@ $(document).ready(function() {
             })
             .complete(function() { });
     });
+    % endif;
 });
 
 // Google Analytics
