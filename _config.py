@@ -44,4 +44,4 @@ blog.twitter.related = "mpirnat,davenoyes,benjaminws,dstanek,mcrute,codeshaman"
 
 blog.disqus.enabled = False
 
-blog.contactform.enabled = False
+blog.contactform.enabled = True
