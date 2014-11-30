@@ -16,7 +16,7 @@
     <title><%block name="title"/></title>
 
     <link rel="alternate" type="application/rss+xml" title="${bf.config.blog.name} RSS Feed" href="${bf.config.site.url}/feed">
-    <link rel="alternate" type="application/atom+xml" title="${bf.config.blog.name} Atom Feed" href="${bf.config.site.url}feed/atom">
+    <link rel="alternate" type="application/atom+xml" title="${bf.config.blog.name} Atom Feed" href="${bf.config.site.url}/feed/atom">
 
 	<!-- Included CSS Files -->
 	<link rel="stylesheet" href="/static/css/foundation.css">
@@ -66,7 +66,9 @@
                         <li><a href="/episodes">Episodes</a></li>
                         <li><a href="/blog">Blog</a></li>
                         <!--<li><a href="/goodies">Goodies</a></li>-->
+                        % if bf.config.blog.contactform.enabled:
                         <li><a href="#contact">Contact</a></li>
+                        % endif
                         <li id="search">
                     <form action="http://www.google.com/search" method="get">
                         <input type="search" name="q" placeholder="Search">
@@ -151,7 +153,8 @@
                             <a href="${bf.config.blog.podcast.itunes_link}">iTunes</a> - find us in the iTunes store</li>
                         % endif
                         % if bf.config.blog.twitter.user:
-                        <li><img src="http://twitter.com/images/resources/twitter-bird-16x16.png" width="12" height="12">
+                            <li><img
+                            src="/static/images/misc/twitter-blue-16x16.png" width="12" height="12">
                             <a href="http://twitter.com/${bf.config.blog.twitter.user|u}">Twitter</a> -
                             follow us, say hi!</li>
                         % endif
@@ -159,6 +162,7 @@
                 </div>
 
                 <div class="four columns">
+                % if bf.config.blog.contactform.enabled:
                     <a name="contact"></a>
                     <h6>Contact</h6>
                     <form id="contact" class="nice" action="/contact-handler/" method="POST">
@@ -169,6 +173,7 @@
                         <input type="hidden" name="mailer.form-key" value="fpip-contact">
                         <input type="hidden" name="mailer.fields.ignore" value="Send">
                     </form>
+                % endif
                 </div>
 
             </div>
@@ -183,7 +188,7 @@
                 </div>
 
                 <div class="six columns">
-                    <p>Copyright &copy; 2010-2013 From Python Import Podcast;
+                    <p>Copyright &copy; 2010-2014 From Python Import Podcast;
                     licensed under a
                     <a rel="license"
                     href="http://creativecommons.org/licenses/by-nc-nd/3.0/">Creative
@@ -266,6 +271,8 @@ $(document).ready(function() {
         return false;
     });
 
+
+    % if bf.config.blog.contactform.enabled:
     // contact form handler
     $("#contact").submit(function(event) {
         event.preventDefault();
@@ -287,6 +294,7 @@ $(document).ready(function() {
             })
             .complete(function() { });
     });
+    % endif;
 });
 
 // Google Analytics
