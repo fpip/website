@@ -55,7 +55,7 @@
 </section>
 % endif
 
-<%include file="pycon2014.mako" />
+<%include file="pycon2015.mako" />
 <%include file="gratipay.mako" />
 <%include file="rackspace.mako" />
 

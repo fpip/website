@@ -277,7 +277,7 @@
             <div class="row">
 
                 <div class="four columns">
-                    <%include file="pycon2014.mako" />
+                    <%include file="pycon2015.mako" />
                 </div>
 
                 <div class="four columns">
