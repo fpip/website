@@ -281,7 +281,7 @@
                 </div>
 
                 <div class="four columns">
-                    <%include file="gittip.mako" />
+                    <%include file="gratipay.mako" />
                 </div>
 
                 <div class="four columns">
